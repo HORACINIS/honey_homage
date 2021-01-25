@@ -20,7 +20,7 @@ Andrew Bui | [GitHub](https://github.com/aBuiDev) | [Portfolio](https://abuidev.
 
 ## Deployment
 
-[Github](https://github.com/aBuiDev/honeyHomage_codingPowerBuddies)
+[Github](https://github.com/HORACINIS/honey_homage)
 
 #
 
