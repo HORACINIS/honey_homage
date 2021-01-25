@@ -101,7 +101,7 @@ As a passionate team of three with a broad skill set that includes digital marke
 
 Our datalow diagram outlines the process of reigistering a user as well as sending request to create a transaction within the server.
 
-![img](./assets/dataflow.png)
+![img](./assets/dataflow-final.png)
 
 <br>
 <br>
