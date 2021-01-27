@@ -1,11 +1,11 @@
 import React from 'react';
-import CanBeDeleted from './CanBeDeleted';
+import Products from './Products';
 
 function HoneyHomage() {
   return (
     <React.Fragment>
       <div className='container'>
-        <CanBeDeleted />
+        <Products />
       </div>
     </React.Fragment>
   );
