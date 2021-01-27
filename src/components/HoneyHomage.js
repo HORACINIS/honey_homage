@@ -1,12 +1,17 @@
 import React from 'react';
-import CanBeDeleted from './CanBeDeleted';
+import Navbar from './Navbar';
+import Products from './Products';
+import Footer from './Footer';
 
 function HoneyHomage() {
   return (
     <React.Fragment>
+      <Navbar />
       <div className='container'>
-        <CanBeDeleted />
+        <Products />
+
       </div>
+      <Footer />
     </React.Fragment>
   );
 }
