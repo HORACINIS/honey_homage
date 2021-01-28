@@ -1,6 +1,7 @@
 import React from 'react';
 import honeycomb from '../images/honeycomb.png';
 import shoppingCart from '../images/shoppingCart.png';
+import Products from './Products';
 
 const Navbar = () => {
     return (
@@ -25,6 +26,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#!">Contact us</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="#!">Login/Sign up</a>
                         </li>
                         <li className="nav-item">
                             <img src={shoppingCart} style={{ marginLeft: '20px' }} alt="Cart" />
