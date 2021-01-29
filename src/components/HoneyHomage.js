@@ -34,29 +34,17 @@ const HoneyHomage = () => {
 
         <div className='container'>
 
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route exact path='/' render={(props) => <Home {...props} />} />
 
-          <Route path='/login'>
-            <Login />
-          </Route>
+          <Route path='/login' render={(props) => <Login {...props} />} />
 
-          <Route path='/products'>
-            <Products itemsListing={items} addItemsToCart={addItemsToCart} />
-          </Route>
+          <Route path='/products' render={(props) => <Products itemsListing={items} addItemsToCart={addItemsToCart} {...props} />} />
 
-          <Route path='/checkout'>
-            <Checkout />
-          </Route>
+          <Route path='/checkout' render={(props) => <Checkout {...props} />} />
 
-          <Route path='/aboutUs'>
-            <AboutUs />
-          </Route>
+          <Route path='/aboutUs' render={(props) => <AboutUs {...props} />} />
 
-          <Route path='/contactUs'>
-            <ContactUs />
-          </Route>
+          <Route path='/contactUs' render={(props) => <ContactUs {...props} />} />
 
         </div>
 

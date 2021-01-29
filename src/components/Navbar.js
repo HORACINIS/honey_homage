@@ -22,9 +22,7 @@ const Navbar = (props) => {
                             <Link to="/" className="nav-link active" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            {/* <a onClick={() => history.push('/products')} className="nav-link active" href="#!">Our products</a> */}
                             <Link to='/products' className="nav-link active" href="#!">Our products</Link>
-
                         </li>
                         <li className="nav-item">
                             <Link to="/aboutUs" className="nav-link active">Who we are</Link>
