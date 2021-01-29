@@ -34,7 +34,7 @@ const HoneyHomage = () => {
 
         <div className='container'>
 
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
 
@@ -50,7 +50,7 @@ const HoneyHomage = () => {
             <Checkout />
           </Route>
 
-          <Route path='aboutUs'>
+          <Route path='/aboutUs'>
             <AboutUs />
           </Route>
 
