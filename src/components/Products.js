@@ -1,4 +1,5 @@
 import React from 'react';
+import honeyProductLargeImg  from '../images/honeyProductLargeImg.png';
 
 const Products = (props) => {
 	const { itemsListing, addItemsToCart } = props;
@@ -9,11 +10,10 @@ const Products = (props) => {
 			<div className="row">
 				{itemsListing && itemsListing.map(item => {
 					const { id, title, details, price, onSale } = item;
-					const honeyImg = 'https://www.flaticon.com/svg/vstatic/svg/525/525042.svg?token=exp=1611889485~hmac=e7b435b66c0addd626662b29db085d31';
 					return (
 						<div className="col-sm-4 " key={id}>
 							<div className="card" width="18rem;">
-								<img src={honeyImg} className="card-img-top" alt="honey" />
+								<img src={honeyProductLargeImg} className="card-img-top" alt="honey" />
 								<div className="card-body">
 									<h5 className="card-title">{title}</h5>
 									<p className="card-text">{details}</p>

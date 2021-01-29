@@ -6,7 +6,6 @@ import Products from './Products';
 import Checkout from './Checkout';
 import ContactUs from './ContactUs';
 import AboutUs from './AboutUs';
-import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import { items } from '../data/honey_products';
 
@@ -14,17 +13,14 @@ import { items } from '../data/honey_products';
 const HoneyHomage = () => {
   let itemsPicked = [];
   const [itemsInCart, setItemsInCart] = useState(itemsPicked);
-  const [numOfItemsInCart, setNumOfItemsInCart] = useState(itemsPicked.length);
+  const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
 
   const addItemsToCart = (product) => {
-    itemsPicked.push(product);
-    setItemsInCart(itemsList => [...itemsList, product]);
+    setItemsInCart(itemsPicked => [...itemsPicked, product]);
 
     setTimeout(() => {
-      setNumOfItemsInCart(itemsInCart.length);
+      setNumOfItemsInCart(itemsInCart.length + 1);
     }, 500);
-
-    console.log(itemsInCart);
   }
 
   return (
@@ -40,15 +36,13 @@ const HoneyHomage = () => {
 
           <Route path='/products' render={(props) => <Products itemsListing={items} addItemsToCart={addItemsToCart} {...props} />} />
 
-          <Route path='/checkout' render={(props) => <Checkout {...props} />} />
+          <Route path='/checkout' render={(props) => <Checkout itemsInCart={itemsInCart} {...props} />} />
 
           <Route path='/aboutUs' render={(props) => <AboutUs {...props} />} />
 
           <Route path='/contactUs' render={(props) => <ContactUs {...props} />} />
 
         </div>
-
-        <Footer />
       </React.Fragment>
     </Switch>
   );
