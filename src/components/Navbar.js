@@ -4,7 +4,7 @@ import shoppingCart from '../images/shoppingCart.png';
 
 const Navbar = (props) => {
     const { numOfItems } = props;
-    console.log(numOfItems);
+    // console.log(numOfItems);
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
@@ -26,7 +26,7 @@ const Navbar = (props) => {
                             <a className="nav-link active" href="#!">Who we are</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#!">Contact us</a>
+                            <a className="nav-link active" href="#!">Connect with us</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link active" href="#!">Login/Sign up</a>
