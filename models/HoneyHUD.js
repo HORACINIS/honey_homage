@@ -2,11 +2,12 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const BookSchema = new Schema({
-  author: String,
-  title: String
+const HoneyHUDSchema = new Schema({
+  userAccounts: Number,
+  totalSales: Number,
+  totalRevenue: Number
 });
 
-const Book = mongoose.model("Book", BookSchema); // This "Book" in this line...
+const HoneyHUD = mongoose.model("HoneyHUD", HoneyHUDSchema);
 
-module.exports = Book;
+module.exports = HoneyHUD;
