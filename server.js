@@ -1,33 +1,43 @@
 // Dependencies
 const express = require("express");
+// const logger = require("morgan");
 const mongoose = require("mongoose");
-const logger = require("morgan");
-
 const path = require("path");
+
+const db = require("./models");
+
 const PORT = process.env.PORT || 3001;
+
 const app = express();
+
+// app.use(logger("dev"));
+
 
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static("public"));
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/HoneyHomageDB", { useNewUrlParser: true });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
 
+// Routes
 app.get('/hey', (request, response) => {
-  console.log("Hello");
-  response.json({ hello: "world" });
+  db.Product.find({}, (error, data) => {
+    response.json(data);
+  });
 });
-
-
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
 
 
 // Listener
