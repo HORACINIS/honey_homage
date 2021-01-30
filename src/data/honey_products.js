@@ -1,4 +1,4 @@
-export const products = [
+export const items = [
     {
         "id": 1,
         "title": "Honey Product #1",
@@ -6,7 +6,7 @@ export const products = [
         "url": "https://via.placeholder.com/600/92c952",
         "thumbnailUrl": "https://via.placeholder.com/150/92c952",
         "price": 10,
-        "onSale": true 
+        "onSale": true
     },
     {
         "id": 2,
