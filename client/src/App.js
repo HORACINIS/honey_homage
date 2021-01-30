@@ -2,34 +2,30 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-class App extends React.Component {
-  state = {
-    hello: "Hello"
-  }
 
-  apiCall() {
-    fetch('/hey', {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(data => console.log(data));
-  }
+const apiCall = function() {
+  fetch('/hey', {
+    method: 'GET'
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
 
-  render() {
+
+const App = () => {
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <h1>{this.state.hello} World!</h1>
+        <h1>Hello World!</h1>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <button onClick={this.apiCall}>Submit</button>
+        <button onClick={apiCall}>Submit</button>
       </div>
     );
-  }
 }
 
 
