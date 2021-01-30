@@ -1,6 +1,6 @@
 module.exports = {
     AdminUser: require("./AdminUser"),
     HoneyHUD: require("./HoneyHUD"),
-    Products: require("./Products"),
+    Product: require("./Product"),
     User: require("./User"),
   };
