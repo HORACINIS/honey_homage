@@ -35,6 +35,8 @@ const UserSchema = new Schema({
     type: String,
     trim: true,
   },
+
+  orders: Array
   
 });
 

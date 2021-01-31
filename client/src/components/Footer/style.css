@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+}
+
+.honeyHomageFooterSection {
+  background-color: var(--jet);
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.honeyHomageFooterSection p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+.honeyHomageFooterLogo {
+  width: 80px;
+}
