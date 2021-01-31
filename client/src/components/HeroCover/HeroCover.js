@@ -16,6 +16,9 @@ const HeroCover = () => {
                 <a href="#"><i class="fab fa-pinterest"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
+            <div>
+                <button>Login</button>
+            </div>
         </section>
     );
 }

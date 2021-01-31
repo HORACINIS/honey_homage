@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import HeroCover from "./components/HeroCover/HeroCover";
+import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
+import AboutUs from "./components/AboutUs/AboutUs.js";
 
 // Components
 
@@ -20,7 +21,7 @@ const App = () => {
       <div className="App">
         <Navbar />
         <HeroCover />
-        <button onClick={apiCall}>Submit</button>
+        <AboutUs />
       </div>
     );
 }

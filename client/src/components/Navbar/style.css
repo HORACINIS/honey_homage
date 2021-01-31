@@ -29,7 +29,8 @@
   width: 330px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .honeyHomageNavLogo {
@@ -39,7 +40,7 @@
 .navLogoContainer a {
   text-decoration: none;
   font-family: 'Nerko One', cursive;
-  font-size: 35px;
+  font-size: 25px;
   cursor: pointer;
   margin: 0px 20px 0px 20px;
   color: var(--carrotOrange);
