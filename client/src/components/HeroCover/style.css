@@ -85,3 +85,8 @@
   background-color: var(--maxYellowRed);
   color: var(--jet);
 }
+
+.loginButton:focus,
+.shopButton:focus {
+  outline: none;
+}
