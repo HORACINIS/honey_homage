@@ -4,6 +4,7 @@ import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import Footer from "./components/Footer/Footer.js";
+import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 
 // Components
