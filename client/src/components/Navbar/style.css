@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
   --banamania: #ffe9ac;
@@ -26,7 +27,6 @@
 
 /* Nav Bar Logo Area */
 .navLogoContainer {
-  width: 330px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,12 +43,11 @@
   font-size: 25px;
   cursor: pointer;
   margin: 0px 20px 0px 20px;
-  color: var(--carrotOrange);
+  color: var(--jet);
 }
 
 /* Nav Bar Links Area */
 .navLinkContainer {
-  width: 330px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,18 +55,18 @@
 }
 
 .navLinkContainer a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin: 0px 10px 0px 10px;
-  color: var(--carrotOrange);
+  color: var(--jet);
 }
 
 .navLinkContainer a:hover {
-  color: var(--jet);
+  color: var(--carrotOrange);
 }
 
 /* Nav Bar Social Media Links Area */
 .navUserContainer {
-  width: 330px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -77,9 +76,9 @@
   text-decoration: none;
   margin: 0px 0px 0px 15px;
   font-size: 20px;
-  color: var(--carrotOrange);
+  color: var(--jet);
 }
 
 .navUserContainer a:hover {
-  color: var(--jet);
+  color: var(--carrotOrange);
 }

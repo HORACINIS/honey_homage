@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
   --banamania: #ffe9ac;
@@ -6,6 +7,7 @@
   --carrotOrange: #f18f01;
   --vermilion: #c73e1d;
   --jet: #2d2d2d;
+  --textColor: #686868;
 }
 
 .aboutUsSection {
@@ -18,7 +20,7 @@
 }
 
 .aboutUsContainer {
-  width: 80%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -33,6 +35,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 20px;
 }
 
 .AboutUsTextContainer {
@@ -47,6 +50,7 @@
 }
 
 .AboutUsTextContainer p {
-  line-height: 30px;
-  color: var(--jet);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+  color: var(--textColor);
 }

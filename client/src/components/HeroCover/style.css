@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
   --banamania: #ffe9ac;
@@ -15,6 +16,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroCoverSectionContainer {
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +55,32 @@
 
 .socialMediaLinksContainer a:hover {
   color: var(--maxYellowRed);
+}
+
+/* Hero Cover Buttons */
+.heroCoverButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.loginButton,
+.shopButton {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin: 0px 10px 0px 10px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: var(--jet);
+}
+
+.loginButton:hover,
+.shopButton:hover {
+  background-color: var(--maxYellowRed);
+  color: var(--jet);
 }

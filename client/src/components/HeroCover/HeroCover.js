@@ -5,19 +5,22 @@ import honeyHomageLogoWhite from "../../images/honeyHomageLogoWhite.svg";
 const HeroCover = () => {
     return (
         <section className="heroCoverSection">
-            <img src={honeyHomageLogoWhite} alt="honeyHomageLogoWhite" className="honeyHomageLogo" />
-            <div className="text-center">
-                <h1 className="honeyHomageCoverTitle">Honey Homage</h1>
-            </div>
-            <div className="socialMediaLinksContainer">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div>
-                <button>Login</button>
+            <div className="heroCoverSectionContainer">
+                <img src={honeyHomageLogoWhite} alt="honeyHomageLogoWhite" className="honeyHomageLogo" />
+                <div className="text-center">
+                    <h1 className="honeyHomageCoverTitle">Honey Homage</h1>
+                </div>
+                <div className="heroCoverButtons">
+                    <button className="loginButton">Login</button>
+                    <button className="shopButton">Shop</button>
+                </div>
+                <div className="socialMediaLinksContainer">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </section>
     );
