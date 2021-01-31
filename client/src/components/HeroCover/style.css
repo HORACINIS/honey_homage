@@ -1,0 +1,8 @@
+.heroCoverSection {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/honeyHomageCoverImage.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

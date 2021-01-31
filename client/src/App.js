@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import HeroCover from "./components/HeroCover/HeroCover";
+
+// Components
 
 
 const apiCall = function() {
@@ -24,6 +27,7 @@ const App = () => {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <button onClick={apiCall}>Submit</button>
+        <HeroCover />
       </div>
     );
 }
