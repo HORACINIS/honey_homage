@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
 
 
 // Routes
-app.get('/hey', (request, response) => {
+app.get('/products/all', (request, response) => {
   db.Product.find({}, (error, data) => {
     response.json(data);
   });
