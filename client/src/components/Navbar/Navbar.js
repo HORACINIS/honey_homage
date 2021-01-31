@@ -1,13 +1,15 @@
 import React from 'react';
 import './style.css';
-import honeyHomageLogoWhite from "../../images/honeyHomageLogoCarrot.svg";
+import honeyHomageLogoCarrot from "../../images/honeyHomageLogoCarrot.svg";
 
 const Navbar = () => {
     return (
         <nav className="honeyHomageNavBar">
             <section>
                 <div className="navLogoContainer">
-                    <img src={honeyHomageLogoWhite} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
+                    <a href="/">
+                    <img src={honeyHomageLogoCarrot} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
+                    </a>
                 </div>
                 <div className="navLinkContainer">
                         <a href="#">Our Story</a>

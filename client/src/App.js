@@ -3,6 +3,7 @@ import "./App.css";
 import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
 import AboutUs from "./components/AboutUs/AboutUs.js";
+import Footer from "./components/Footer/Footer.js";
 
 // Components
 
@@ -22,6 +23,7 @@ const App = () => {
         <Navbar />
         <HeroCover />
         <AboutUs />
+        <Footer />
       </div>
     );
 }

@@ -1,28 +1,14 @@
 import React from 'react';
 import './style.css';
-import honeyHomageLogoWhite from "../../images/honeyHomageLogoCarrot.svg";
+import honeyHomageLogoWhite from "../../images/honeyHomageLogoWhite.svg";
 
-const Navbar = () => {
+const Footer = () => {
     return (
-        <nav className="honeyHomageNavBar">
-            <section>
-                <div className="navLogoContainer">
-                    <img src={honeyHomageLogoWhite} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
-                </div>
-                <div className="navLinkContainer">
-                        <a href="#">Our Story</a>
-                        <p>|</p>
-                        <a href="#">Honey Store</a>
-                        <p>|</p>
-                        <a href="#">Contact Us</a>
-                </div>
-                <div className="navUserContainer">
-                        <a href="#"><i class="fas fa-user-circle"></i></a>
-                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-            </section>
-        </nav>
+        <footer className="honeyHomageFooterSection">
+            <img src={honeyHomageLogoWhite} alt="honeyHomageFooterLogo" className="honeyHomageFooterLogo" />
+            <p>Copyright 2021 | Honey Homage | CodingPowerBuddies</p>
+        </footer>
     );
 }
 
-export default Navbar;
+export default Footer;
