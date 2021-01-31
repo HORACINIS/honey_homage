@@ -9,7 +9,7 @@
 }
 
 .honeyHomageNavBar {
-  background-color: var(--carrotOrange);
+  background-color: #fff;
   width: 100%;
   height: 100px;
   display: flex;
@@ -36,10 +36,12 @@
   width: 60px;
 }
 
-.navLogoContainer h1 {
+.navLogoContainer a {
+  text-decoration: none;
   font-family: 'Nerko One', cursive;
   font-size: 30px;
-  color: var(--banamania);
+  cursor: pointer;
+  color: var(--jet);
 }
 
 /* Nav Bar Links Area */
@@ -51,16 +53,16 @@
 
 .navLinkContainer a {
   text-decoration: none;
-  color: var(--banamania);
+  color: var(--jet);
 }
 
 .navLinkContainer a:hover {
-  color: var(--vermilion);
+  color: var(--carrotOrange);
 }
 
 /* Nav Bar Social Media Links Area */
 .socialMediaLinksContainer {
-  width: 180px;
+  width: 220px;
 }
 
 .socialMediaLinksContainer div {
@@ -72,5 +74,10 @@
 
 .socialMediaLinksContainer div a {
   text-decoration: none;
-  color: var(--banamania);
+  font-size: 20px;
+  color: var(--jet);
+}
+
+.socialMediaLinksContainer div a:hover {
+  color: var(--carrotOrange);
 }
