@@ -30,3 +30,21 @@
   font-size: 70px;
   color: #fff;
 }
+
+/* Social Media Links Container */
+.socialMediaLinksContainer {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialMediaLinksContainer a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--jet);
+}
+
+.socialMediaLinksContainer a:hover {
+  color: var(--maxYellowRed);
+}

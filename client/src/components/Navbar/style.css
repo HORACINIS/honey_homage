@@ -11,7 +11,7 @@
 .honeyHomageNavBar {
   background-color: #fff;
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
 
 /* Nav Bar Logo Area */
 .navLogoContainer {
-  width: 250px;
+  width: 330px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,45 +39,46 @@
 .navLogoContainer a {
   text-decoration: none;
   font-family: 'Nerko One', cursive;
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
-  color: var(--jet);
+  margin: 0px 20px 0px 20px;
+  color: var(--carrotOrange);
 }
 
 /* Nav Bar Links Area */
 .navLinkContainer {
-  width: 300px;
+  width: 330px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .navLinkContainer a {
   text-decoration: none;
-  color: var(--jet);
+  margin: 0px 10px 0px 10px;
+  color: var(--carrotOrange);
 }
 
 .navLinkContainer a:hover {
-  color: var(--carrotOrange);
-}
-
-/* Nav Bar Social Media Links Area */
-.socialMediaLinksContainer {
-  width: 220px;
-}
-
-.socialMediaLinksContainer div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.socialMediaLinksContainer div a {
-  text-decoration: none;
-  font-size: 20px;
   color: var(--jet);
 }
 
-.socialMediaLinksContainer div a:hover {
+/* Nav Bar Social Media Links Area */
+.navUserContainer {
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.navUserContainer a {
+  text-decoration: none;
+  margin: 0px 0px 0px 15px;
+  font-size: 20px;
   color: var(--carrotOrange);
+}
+
+.navUserContainer a:hover {
+  color: var(--jet);
 }
