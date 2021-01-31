@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+}
+
 .heroCoverSection {
   width: 100vw;
   height: 100vh;
@@ -5,4 +15,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.honeyHomageLogo {
+  width: 300px;
+  height: 200px;
+}
+
+.honeyHomageCoverTitle {
+  font-family: 'Nerko One', cursive;
+  font-size: 50px;
+  color: white;
 }

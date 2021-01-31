@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import HeroCover from "./components/HeroCover/HeroCover";
+import Navbar from "./components/Navbar/Navbar.js";
 
 // Components
-
 
 const apiCall = function() {
   fetch('/hey', {
@@ -15,19 +14,13 @@ const apiCall = function() {
 }
 
 
+
 const App = () => {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <h1>Hello World!</h1>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={apiCall}>Submit</button>
+        <Navbar />
         <HeroCover />
+        <button onClick={apiCall}>Submit</button>
       </div>
     );
 }
