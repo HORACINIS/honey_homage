@@ -9,12 +9,14 @@ import { useAuth0 } from "@auth0/auth0-react";
 const LoginButtonAuthenticator = () => {
   const { isAuthenticated } = useAuth0();
 
-  return isAuthenticated ? 
+  return isAuthenticated 
+  ? 
   <div>
     <a href="#"><i class="fas fa-user-circle"></i></a>
     <a href="#"><i class="fas fa-shopping-cart"></i></a>
     <LogoutButton /> 
-  </div> : 
+  </div> 
+  : 
   <div></div>;
 };
 
