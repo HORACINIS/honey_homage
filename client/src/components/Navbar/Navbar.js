@@ -4,7 +4,7 @@ import honeyHomageLogoCarrot from "../../images/honeyHomageLogoCarrot.svg";
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "../LogoutButton/LogoutButton"
 import LoginButton from "../LoginButton/LoginButton"
-import AuthNav from "../auth-nav";
+import LogoutButtonAuthenticator from "../LogoutButtonAuthenticator/LogoutButtonAuthenticator"
 
 const Navbar = () => {
     return (
@@ -25,8 +25,8 @@ const Navbar = () => {
                 <div className="navUserContainer">
                         <a href="#"><i class="fas fa-user-circle"></i></a>
                         <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <LogoutButtonAuthenticator />
                 </div>
-                <AuthNav />
             </section>
         </nav>
     );
