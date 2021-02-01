@@ -67,7 +67,6 @@
   height: 100px;
 }
 
-.loginButton,
 .shopButton {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -80,13 +79,11 @@
   background-color: var(--jet);
 }
 
-.loginButton:hover,
 .shopButton:hover {
   background-color: var(--maxYellowRed);
   color: var(--jet);
 }
 
-.loginButton:focus,
 .shopButton:focus {
   outline: none;
 }

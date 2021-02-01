@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+
 const AboutUs = () => {
     return (
         <section className="aboutUsSection">

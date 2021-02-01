@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
 import honeyHomageLogoWhite from "../../images/honeyHomageLogoWhite.svg";
+import LoginButtonAuthenticator from "../LoginButtonAuthenticator/LoginButtonAuthenticator"
 
 const HeroCover = () => {
     return (
@@ -11,7 +12,7 @@ const HeroCover = () => {
                     <h1 className="honeyHomageCoverTitle">Honey Homage</h1>
                 </div>
                 <div className="heroCoverButtons">
-                    <button className="loginButton">Login</button>
+                    <LoginButtonAuthenticator />
                     <button className="shopButton">Shop</button>
                 </div>
                 <div className="socialMediaLinksContainer">

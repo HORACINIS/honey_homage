@@ -1,6 +1,16 @@
 import React from 'react';
 import honeyProductLargeImg  from '../images/honeyProductLargeImg.png';
 
+
+// const apiCall = function() {
+//   fetch('/products/all', {
+//     method: 'GET'
+//   })
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+// }
+
+
 const Products = (props) => {
 	const { itemsListing, addItemsToCart } = props;
 
