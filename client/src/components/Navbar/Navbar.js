@@ -2,8 +2,8 @@ import React from 'react';
 import './style.css';
 import honeyHomageLogoCarrot from "../../images/honeyHomageLogoCarrot.svg";
 import { useAuth0 } from "@auth0/auth0-react";
-import LogoutButton from "../logout-button";
-import LoginButton from "../login-button";
+import LogoutButton from "../LogoutButton/LogoutButton"
+import LoginButton from "../LoginButton/LoginButton"
 import AuthNav from "../auth-nav";
 
 const Navbar = () => {
