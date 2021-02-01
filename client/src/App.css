@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+  --textColor: #686868;
+}
+
 .App {
   text-align: center;
 }
@@ -18,7 +30,26 @@
   font-size: large;
 }
 
+.loadingDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  animation: app-loading-spinner infinite 0.5s linear;
+  color: var(--carrotOrange);
+  font-size: 50px;
+}
+
 @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes app-loading-spinner {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
