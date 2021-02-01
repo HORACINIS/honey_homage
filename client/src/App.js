@@ -10,7 +10,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 // Components
 
 const apiCall = function() {
-  fetch('/hey', {
+  fetch('/products/all', {
     method: 'GET'
   })
   .then(response => response.json())
@@ -23,7 +23,7 @@ const App = () => {
   const { isLoading } = useAuth0();
 
   if (isLoading) {
-    return <div>Hello World!</div>
+    return <div className="loadingDiv"><i class="fas fa-spinner loadingSpinner"></i></div>
   }
     return (
       <div className="App">
@@ -31,6 +31,7 @@ const App = () => {
         <HeroCover />
         <AboutUs />
         <Footer />
+
       </div>
     );
 }
