@@ -10,7 +10,7 @@
   --textColor: #686868;
 }
 
-.logoutButton {
+.adminButton {
     cursor: pointer;
     margin: 0px 10px 0px 0px;
     width: 100px;
@@ -20,11 +20,11 @@
     background-color: transparent;
 }
 
-.logoutButton:focus {
+.adminButton:focus {
     outline: none;
 }
 
-.logoutButton:hover {
+.adminButton:hover {
     border: 1px solid var(--carrotOrange);
     color: var(--carrotOrange);
 }
