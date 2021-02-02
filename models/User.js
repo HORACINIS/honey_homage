@@ -4,18 +4,15 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
 
+  accessToken: {
+    type: String
+  },
+
   username: { 
     type: String,
     trim: true,
     unique: true,
     required: "Username is required"
-  },
-
-  password: { 
-    type: String,
-    trim: true,
-    required: "Password is required",
-    validate: [(value) => value.length >= 8, "Password needs to be 8 or more characters in length."]
   },
 
   email: { 

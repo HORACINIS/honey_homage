@@ -33,7 +33,6 @@ const App = () => {
       <AboutUs />
       <Products />
       <Footer />
-
     </div>
   );
 }
