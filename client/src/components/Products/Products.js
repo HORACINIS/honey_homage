@@ -1,52 +1,24 @@
 import React from 'react';
 
-
-// const apiCall = function() {
-//   fetch('/products/all', {
-//     method: 'GET'
-//   })
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-// }
-
-
-const Products = (props) => {
-	const { itemsListing, addItemsToCart } = props;
-
+const Products = ({ products }) => {
 
 	return (
 		<div>
-			<h1>Products Page</h1>
-
-
+			<h1>Products</h1>
+			<ul>
+				{products && products.map(item => {
+					const { _id, title, image, price, sale, inStock } = item;
+					return (
+						<li key={_id}>
+							<img src={image} alt="honey product" />
+							<h3>{title}</h3>
+							<p>${price} {sale && <span>Discounted</span>}</p>
+							<p>{inStock ? 'In Stock' : 'Out of Stock'}</p>
+						</li>
+					)
+				})}
+			</ul>
 		</div>
-
-
-
-		// <div className="container">
-		// 	<h1 className="text-center">Our Products</h1>
-		// 	<div className="row">
-		// 		{itemsListing && itemsListing.map(item => {
-		// 			const { id, title, details, price, onSale } = item;
-		// 			return (
-		// 				<div className="col-sm-4 " key={id}>
-		// 					<div className="card" width="18rem;">
-		// 						<img src={honeyProductLargeImg} className="card-img-top" alt="honey" />
-		// 						<div className="card-body">
-		// 							<h5 className="card-title">{title}</h5>
-		// 							<p className="card-text">{details}</p>
-		// 							<h5>${price} {onSale && <span className="p-1 mb-2 bg-danger text-white">ON SALE</span>}</h5>
-		// 							<button className="btn btn-warning" onClick={() => addItemsToCart(item)}>
-		// 								<i style={{ fontSize: '2em' }} className="fas fa-plus-circle" />
-		//                                 Add to cart
-		//                             </button>
-		// 						</div>
-		// 					</div>
-		// 				</div>
-		// 			);
-		// 		})}
-		// 	</div>
-		// </div>
 	)
 }
 
