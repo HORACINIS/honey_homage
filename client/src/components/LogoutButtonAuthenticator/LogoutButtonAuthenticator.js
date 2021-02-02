@@ -5,6 +5,7 @@ import './style.css';
 
 import LogoutButton from "../LogoutButton/LogoutButton";
 import SignupButton from "../SignupButton/SignupButton";
+import CheckoutMeter from "../CheckoutMeter/CheckoutMeter";
 import AdminButtonAuthenticator from "../AdminButtonAuthenticator/AdminButtonAuthenticator";
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -20,7 +21,7 @@ const LoginButtonAuthenticator = () => {
     <AdminButtonAuthenticator />
     <LogoutButton /> 
     <a href="#"><i class="fas fa-user-circle"></i></a>
-    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    <a href="#"><i class="fas fa-shopping-cart"></i><CheckoutMeter /></a>
   </div> 
 
   :
