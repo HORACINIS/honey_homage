@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
@@ -8,34 +8,34 @@ import Footer from "./components/Footer/Footer.js";
 import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 
-// Components
-
-const apiCall = function () {
-  fetch('/products/all', {
-    method: 'GET'
-  })
-    .then(response => response.json())
-    .then(data => console.log(data));
-}
-
-
-
 const App = () => {
   const { isLoading } = useAuth0();
+  const url = '/products/all';
+
+  const [products, setProducts] = useState();
+
+  async function fetchApi() {
+    const response = await fetch(url);
+    const data = await response.json();
+    setProducts(data)
+  }
+  useEffect(() => {
+    fetchApi()
+  }, [])
 
   if (isLoading) {
-    return <div className="loadingDiv"><i class="fas fa-spinner loadingSpinner"></i></div>
+    return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
   }
+
   return (
     <div className="App">
       <Navbar />
       <HeroCover />
       <AboutUs />
-      <Products />
+      <Products products={products} />
       <Footer />
     </div>
   );
 }
-
 
 export default App;
