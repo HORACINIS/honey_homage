@@ -1,6 +1,7 @@
 // src/components/authentication-button.js
 
 import React from "react";
+import './style.css';
 
 import LoginButton from "../LoginButton/LoginButton"
 
