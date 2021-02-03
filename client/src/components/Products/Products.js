@@ -14,9 +14,12 @@ const Products = ({ products }) => {
 
 	return (
 		<section className="productsSection">
+			<section className="titleSection">
+
+            </section>
 			<div className="productsContainer">
 				{products && products.map(item => {
-					const { _id, title, image, price, sale, inStock } = item;
+					const { _id, title, image, price, sale, details, inStock } = item;
 
 					let imageSrc = ""
 
@@ -48,6 +51,7 @@ const Products = ({ products }) => {
 							</div>
 							<div className="productListingInfoContainer">
 								<h3>{title}</h3>
+								<p className="productListingInfoDetails">{details}</p>
 								<p>${price} {sale && <span>Discounted</span>}</p>
 								{/* <p>{inStock ? 'In Stock' : 'Out of Stock'}</p> */}
 							</div>

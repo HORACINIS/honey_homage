@@ -36,7 +36,7 @@
 
 .productListingImage {
   width: 100%;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .productListingImage:hover {
@@ -52,6 +52,10 @@
 .productListingInfoContainer h3 {
   margin: 10px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.productListingInfoDetails {
+  font-size: 12px;
 }
 
 .productListingInfoContainer p {

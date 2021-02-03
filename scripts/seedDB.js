@@ -5,83 +5,83 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/HoneyHomageDB",
 
 const productSeed = [
   {
-    title: "Honey Type 01",
+    title: "Lakeview Honey T-One",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade I, Organically Filtered Honey.",
     image: "honeyType01",
-    price: 12,
+    price: 19.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 02",
+    title: "Riverwood Honey T-Two",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade I, Organically Filtered Honey.",
     image: "honeyType02",
-    price: 12,
+    price: 19.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 03",
+    title: "Rockpool Honey T-Three",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade I, Organically Filtered Honey.",
     image: "honeyType03",
-    price: 12,
+    price: 19.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 04",
+    title: "Fir Honey O-One",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade II, Organic Honey w/ Honeycomb.",
     image: "honeyType04",
-    price: 12,
+    price: 24.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 05",
+    title: "Ash Honey O-Two",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade II, Organic Honey w/ Honeycomb.",
     image: "honeyType05",
-    price: 12,
+    price: 24.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 06",
+    title: "Oak Honey O-Three",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "500ml Grade II, Organic Honey w/ Honeycomb.",
     image: "honeyType06",
-    price: 12,
+    price: 24.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 07",
+    title: "Dolostone Honey A-One",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "450ml Grade III, Stone Filtered Organic Honey.",
     image: "honeyType07",
-    price: 12,
+    price: 29.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 08",
+    title: "Rhyolite Honey A-Two",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "450ml Grade III, Stone Filtered Organic Honey.",
     image: "honeyType08",
-    price: 12,
+    price: 29.95,
     sale: false,
     inStock: true
   },
   {
-    title: "Honey Type 09",
+    title: "Slate Honey A-Three",
     details: 
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "450ml Grade III, Stone Filtered Organic Honey.",
     image: "honeyType09",
-    price: 12,
+    price: 29.95,
     sale: false,
     inStock: true
   }
