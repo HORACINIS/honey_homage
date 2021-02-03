@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+}
+
+.productsSection {
+  margin: 100px 0px 100px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.productListingContainer {
+  margin: 30px 30px 100px 30px;
+}
+
+.productListingImageContainer {
+  overflow: hidden;
+}
+
+.productListingImage {
+  width: 100%;
+  transition: 1s;
+}
+
+.productListingImage:hover {
+  transform: scale(1.05);
+}
+
+.productListingInfoContainer {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.productListingInfoContainer h3 {
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.productListingInfoDetails {
+  font-size: 12px;
+}
+
+.productListingInfoContainer p {
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.productListingQuanityInput {
+  width: 50px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid var(--carrotOrange);
+  border-radius: 10px;
+}
+
+.productListingQuanityInput:focus {
+  outline: none;
+}
+
+.productListingAddToCarButton {
+  margin: 20px 0px 0px 0px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: var(--carrotOrange);
+  transition: 0.1s;
+}
+
+.productListingAddToCarButton:hover {
+  cursor: pointer;
+  background-color: var(--maxYellowRed);
+}
+
+.productListingAddToCarButton:active {
+  outline: none;
+}
+
+.productListingAddToCarButton:focus {
+  outline: none;
+}
