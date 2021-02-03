@@ -43,7 +43,6 @@ const Products = ({ products }) => {
 						imageSrc = honeyType09;
 					}
 
-
 					return (
 						<div key={_id} className="productListingContainer">
 							<div className="productListingImageContainer">
@@ -54,6 +53,12 @@ const Products = ({ products }) => {
 								<p className="productListingInfoDetails">{details}</p>
 								<p>${price} {sale && <span>Discounted</span>}</p>
 								{/* <p>{inStock ? 'In Stock' : 'Out of Stock'}</p> */}
+							</div>
+							<div>
+								<form className="productListingForm">
+									<input type="number" className="productListingQuanityInput"/>
+									<button className="productListingAddToCarButton">Add to Cart</button>
+								</form>
 							</div>
 						</div>
 					)
