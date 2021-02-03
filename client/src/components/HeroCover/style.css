@@ -17,8 +17,9 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .heroCoverSectionContainer {
@@ -42,6 +43,7 @@
 /* Social Media Links Container */
 .socialMediaLinksContainer {
   width: 220px;
+  margin: 50px 0px 100px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

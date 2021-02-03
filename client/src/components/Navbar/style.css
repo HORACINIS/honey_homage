@@ -10,7 +10,7 @@
 }
 
 .honeyHomageNavBar {
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
   height: 120px;
   display: flex;
@@ -58,11 +58,18 @@
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin: 0px 10px 0px 10px;
-  color: var(--jet);
+  color: #fff;
+}
+
+.navLinkContainer p {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  color: #fff;
 }
 
 .navLinkContainer a:hover {
-  color: var(--carrotOrange);
+  color: var(--banamania);
 }
 
 /* Nav Bar Social Media Links Area */

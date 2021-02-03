@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+  --textColor: #686868;
+}
+
 .loggedInNavBarElementsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loggedInNavBarElementsContainer a {
+  color: #fff;
+}
+
+.loggedInNavBarElementsContainer a:hover {
+  color: var(--banamania);
+}
+
+.shoppingCartIcon {
+  position: relative;
 }

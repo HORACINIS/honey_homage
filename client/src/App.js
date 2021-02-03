@@ -32,7 +32,6 @@ const App = () => {
   return (
     <Switch>
       <div className="App">
-        <Navbar />
         <Route exact path='/'>
           <HeroCover />
           <AboutUs />
