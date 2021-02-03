@@ -34,8 +34,8 @@ const App = () => {
       <div className="App">
         <Route exact path='/'>
           <HeroCover />
-          <AboutUs />
           <Products products={products} />
+          <AboutUs />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart {...props} />} />
         <Footer />
