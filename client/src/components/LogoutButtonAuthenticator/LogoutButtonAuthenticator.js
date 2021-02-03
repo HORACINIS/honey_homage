@@ -8,6 +8,8 @@ import SignupButton from "../SignupButton/SignupButton";
 import CheckoutMeter from "../CheckoutMeter/CheckoutMeter";
 import AdminButtonAuthenticator from "../AdminButtonAuthenticator/AdminButtonAuthenticator";
 
+import { Link } from 'react-router-dom';
+
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LoginButtonAuthenticator = () => {
@@ -18,10 +20,16 @@ const LoginButtonAuthenticator = () => {
   ? 
 
   <div className="loggedInNavBarElementsContainer">
-    <AdminButtonAuthenticator />
+    <Link to='/adminportal'>
+        <AdminButtonAuthenticator />
+    </Link>
     <LogoutButton /> 
-    <a href="#"><i className="fas fa-user-circle"></i></a>
-    <a href="#"><i className="fas fa-shopping-cart"></i><CheckoutMeter /></a>
+    <Link to='/userProfile'>
+        <a><i className="fas fa-user-circle"></i></a>
+    </Link>
+    <Link to='/shoppingCart'>
+        <a><i className="fas fa-shopping-cart shoppingCartIcon"><CheckoutMeter /></i></a>
+    </Link>
   </div> 
 
   :

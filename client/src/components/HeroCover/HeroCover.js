@@ -2,10 +2,12 @@ import React from 'react';
 import "./style.css";
 import honeyHomageLogoWhite from "../../images/honeyHomageLogoWhite.svg";
 import LoginButtonAuthenticator from "../LoginButtonAuthenticator/LoginButtonAuthenticator"
+import Navbar from "../Navbar/Navbar"
 
 const HeroCover = () => {
     return (
         <section className="heroCoverSection">
+            <Navbar />
             <div className="heroCoverSectionContainer">
                 <img src={honeyHomageLogoWhite} alt="honeyHomageLogoWhite" className="honeyHomageLogo" />
                 <div className="text-center">

@@ -11,20 +11,22 @@
 }
 
 .logoutButton {
-    cursor: pointer;
-    margin: 0px 10px 0px 0px;
-    width: 100px;
-    height: 30px;
-    border: 1px solid var(--jet);
-    border-radius: 10px;
-    background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .logoutButton:focus {
-    outline: none;
+  outline: none;
 }
 
 .logoutButton:hover {
-    border: 1px solid var(--carrotOrange);
-    color: var(--carrotOrange);
+  border: 1px solid var(--banamania);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--banamania);
 }

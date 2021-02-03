@@ -2,7 +2,7 @@ import React from 'react';
 // import { Hashlink as Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import './style.css';
-import honeyHomageLogoCarrot from "../../images/honeyHomageLogoCarrot.svg";
+import honeyHomageLogoWhite from "../../images/honeyHomageLogoWhite.svg";
 import LogoutButtonAuthenticator from "../LogoutButtonAuthenticator/LogoutButtonAuthenticator"
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
             <section>
                 <div className="navLogoContainer">
                     <Link to="/">
-                    <img src={honeyHomageLogoCarrot} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
+                        <img src={honeyHomageLogoWhite} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
                     </Link>
                 </div>
                 <div className="navLinkContainer">
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <a href="#contactUs">Contact Us</a>
                 </div>
                 <div className="navUserContainer">
-                        <Link to ='/shoppingCart'><LogoutButtonAuthenticator /></Link> 
+                        <Link to='/shoppingCart'><LogoutButtonAuthenticator /></Link> 
                 </div>
             </section>
         </nav>
