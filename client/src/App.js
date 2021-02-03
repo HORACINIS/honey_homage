@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Switch, Route, Redirect } from 'react-router-dom';
 import "./App.css";
 import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
 import Products from './components/Products/Products';
+import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import Footer from "./components/Footer/Footer.js";
 import Profile from "./components/UserProfile/UserProfile.js";
@@ -14,13 +16,13 @@ const App = () => {
 
   const [products, setProducts] = useState();
 
-  async function fetchApi() {
+  async function fetchProductsApi() {
     const response = await fetch(url);
     const data = await response.json();
     setProducts(data)
   }
   useEffect(() => {
-    fetchApi()
+    fetchProductsApi()
   }, [])
 
   if (isLoading) {
@@ -28,14 +30,24 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <Navbar />
-      <HeroCover />
-      <AboutUs />
-      <Products products={products} />
-      <Footer />
-    </div>
+    <Switch>
+      <div className="App">
+        <Navbar />
+        <Route exact path='/'>
+          <HeroCover />
+          <AboutUs />
+          <Products products={products} />
+        </Route>
+        <Route path='/shoppingCart' render={(props) => <ShoppingCart {...props} />} />
+        <Footer />
+      </div>
+    </Switch>
   );
 }
 
 export default App;
+
+
+<Route exact path="/">
+  <Redirect to="/home" />
+</Route>
