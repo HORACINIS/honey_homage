@@ -56,7 +56,8 @@ const Products = ({ products }) => {
 							</div>
 							<div>
 								<form className="productListingForm">
-									<input type="number" className="productListingQuanityInput"/>
+									<label>Qty:</label>
+									<input type="number" placeholder="0" className="productListingQuanityInput"/>
 									<button className="productListingAddToCarButton">Add to Cart</button>
 								</form>
 							</div>

@@ -64,5 +64,37 @@
 }
 
 .productListingQuanityInput {
-    
+  width: 50px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid var(--carrotOrange);
+  border-radius: 10px;
+}
+
+.productListingQuanityInput:focus {
+  outline: none;
+}
+
+.productListingAddToCarButton {
+  margin: 20px 0px 0px 0px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: var(--carrotOrange);
+  transition: 0.1s;
+}
+
+.productListingAddToCarButton:hover {
+  cursor: pointer;
+  background-color: var(--maxYellowRed);
+}
+
+.productListingAddToCarButton:active {
+  outline: none;
+}
+
+.productListingAddToCarButton:focus {
+  outline: none;
 }
