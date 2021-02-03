@@ -20,8 +20,8 @@ const LoginButtonAuthenticator = () => {
   <div className="loggedInNavBarElementsContainer">
     <AdminButtonAuthenticator />
     <LogoutButton /> 
-    <a href="#"><i class="fas fa-user-circle"></i></a>
-    <a href="#"><i class="fas fa-shopping-cart"></i><CheckoutMeter /></a>
+    <a href="#"><i className="fas fa-user-circle"></i></a>
+    <a href="#"><i className="fas fa-shopping-cart"></i><CheckoutMeter /></a>
   </div> 
 
   :

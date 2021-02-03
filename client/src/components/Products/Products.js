@@ -3,8 +3,7 @@ import React from 'react';
 const Products = ({ products }) => {
 
 	return (
-		<div>
-			<h1>Products</h1>
+		<div id="store">
 			<ul>
 				{products && products.map(item => {
 					const { _id, title, image, price, sale, inStock } = item;

@@ -1,4 +1,6 @@
 import React from 'react';
+// import { Hashlink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import './style.css';
 import honeyHomageLogoCarrot from "../../images/honeyHomageLogoCarrot.svg";
 import LogoutButtonAuthenticator from "../LogoutButtonAuthenticator/LogoutButtonAuthenticator"
@@ -8,19 +10,19 @@ const Navbar = () => {
         <nav className="honeyHomageNavBar">
             <section>
                 <div className="navLogoContainer">
-                    <a href="/">
+                    <Link to="/">
                     <img src={honeyHomageLogoCarrot} alt="honeyHomageNavLogo" className="honeyHomageNavLogo" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="navLinkContainer">
-                        <a href="#">Our Story</a>
+                        <a href="#ourStory">Our Story</a>
                         <p>|</p>
-                        <a href="#">Honey Store</a>
+                        <a href="#store">Honey Store</a>
                         <p>|</p>
-                        <a href="#">Contact Us</a>
+                        <a href="#contactUs">Contact Us</a>
                 </div>
                 <div className="navUserContainer">
-                        <LogoutButtonAuthenticator />
+                        <Link to ='/shoppingCart'><LogoutButtonAuthenticator /></Link> 
                 </div>
             </section>
         </nav>
