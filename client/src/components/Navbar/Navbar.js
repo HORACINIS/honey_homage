@@ -17,8 +17,6 @@ const Navbar = () => {
                 <div className="navLinkContainer">
                         <a href="#ourStory">Our Story</a>
                         <p>|</p>
-                        <a href="#store">Honey Store</a>
-                        <p>|</p>
                         <a href="#contactUs">Contact Us</a>
                 </div>
                 <div className="navUserContainer">
