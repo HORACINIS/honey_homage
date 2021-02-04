@@ -43,7 +43,7 @@ const App = () => {
 
     setPickedItems({ ...selectedItems, total: qty });
   }
-  console.log(pickedItems);
+  // console.log(pickedItems);
 
   return (
     <Switch>

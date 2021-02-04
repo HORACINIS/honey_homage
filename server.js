@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 const db = require("./models");
-const mongoDBPW = ""
+const mongoDBPW = "dogmeat2020";
 
 const PORT = process.env.PORT || 3001;
 
