@@ -14,8 +14,8 @@ const Products = ({ products }) => {
 
 	return (
 		<section className="productsSection" id="store">
-			<section className="titleSection">
-
+			<section className="productsTitleSection">
+				Products
             </section>
 			<div className="productsContainer">
 				{products && products.map(item => {
