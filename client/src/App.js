@@ -14,6 +14,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
 
 const App = () => {
+  let picked = [];
+  const [pickedItems, setPickedItems] = useState(picked);
+
   const { isLoading } = useAuth0();
   const url = '/products/all';
 
@@ -32,26 +35,20 @@ const App = () => {
     return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
   }
 
+  // Everytime the addToCart btn is pressed, the object itself and the quantity of each item in Products return back to this function
+  function selectedProducts(selectedItems, qty) {
+    // const { title } = selectedItems;
+    // console.log(title);
+    // console.log(qty);
 
-
-  // Everytime the addToCart btn is pressed, the object itself returns back to this function
-  function selectedProducts (selectedItems, qty) {
-    const {title} = selectedItems;
-    console.log(title);
-    console.log(qty);
-    
+    setPickedItems({ ...selectedItems, total: qty });
   }
-
-
-
-
-
-
+  console.log(pickedItems);
 
   return (
     <Switch>
       <div className="App">
-        <Navbar />
+        <Navbar pickedItems={pickedItems} />
         <Route exact path='/'>
           <HeroCover />
           <Products products={products} selectedProducts={selectedProducts} />

@@ -11,33 +11,33 @@ import { Link } from 'react-router-dom';
 
 import { useAuth0 } from "@auth0/auth0-react";
 
-const LoginButtonAuthenticator = () => {
+const LoginButtonAuthenticator = ({ pickedItems }) => {
   const { isAuthenticated } = useAuth0();
 
-  return isAuthenticated 
-  
-  ? 
+  return isAuthenticated
 
-  <div className="loggedInNavBarElementsContainer">
-    <Link to='/adminportal'>
+    ?
+
+    <div className="loggedInNavBarElementsContainer">
+      <Link to='/adminportal'>
         <AdminButtonAuthenticator />
-    </Link>
-    <LogoutButton /> 
-    <Link to='/userProfile'>
+      </Link>
+      <LogoutButton />
+      <Link to='/userProfile'>
         <a><i className="fas fa-user-circle"></i></a>
-    </Link>
-    <Link to='/shoppingCart'>
-        <a><i className="fas fa-shopping-cart shoppingCartIcon"><CheckoutMeter /></i></a>
-    </Link>
-  </div> 
+      </Link>
+      <Link to='/shoppingCart'>
+        <a><i className="fas fa-shopping-cart shoppingCartIcon"><CheckoutMeter pickedItems={pickedItems} /></i></a>
+      </Link>
+    </div>
 
-  :
+    :
 
-  <div className="loggedInNavBarElementsContainer">
-    <SignupButton />
-  </div>
+    <div className="loggedInNavBarElementsContainer">
+      <SignupButton />
+    </div>
 
-  ;
+    ;
 
 };
 

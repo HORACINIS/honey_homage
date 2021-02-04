@@ -3,7 +3,8 @@
 import React from "react";
 import "./style.css";
 
-const CheckoutMeter = () => {
+const CheckoutMeter = ({ pickedItems }) => {
+  console.log(pickedItems)
   return (
     <span className="checkoutMeter">
       0

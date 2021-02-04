@@ -5,7 +5,7 @@ import './style.css';
 import honeyHomageLogoJet from "../../images/honeyHomageLogoJet.svg";
 import LogoutButtonAuthenticator from "../LogoutButtonAuthenticator/LogoutButtonAuthenticator"
 
-const Navbar = () => {
+const Navbar = ({ pickedItems }) => {
     return (
         <nav className="honeyHomageNavBar">
             <section>
@@ -20,7 +20,7 @@ const Navbar = () => {
                     <a href="#contactUs">Contact Us</a>
                 </div>
                 <div className="navUserContainer">
-                    <Link to='/shoppingCart'><LogoutButtonAuthenticator /></Link>
+                    <Link to='/shoppingCart'><LogoutButtonAuthenticator pickedItems={pickedItems} /></Link>
                 </div>
             </section>
         </nav>
