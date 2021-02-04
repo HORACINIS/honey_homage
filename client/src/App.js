@@ -10,6 +10,9 @@ import Footer from "./components/Footer/Footer.js";
 import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 
+// Pages
+import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
+
 const App = () => {
   const { isLoading } = useAuth0();
   const url = '/products/all';
@@ -32,12 +35,14 @@ const App = () => {
   return (
     <Switch>
       <div className="App">
+        <Navbar />
         <Route exact path='/'>
           <HeroCover />
           <Products products={products} />
           <AboutUs />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart {...props} />} />
+        <Route exact path='/AdminPortal' component={AdminPortal}/>
         <Footer />
       </div>
     </Switch>

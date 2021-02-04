@@ -11,7 +11,7 @@
 
 .honeyHomageFooterSection {
   background-color: var(--jet);
-  width: 100vw;
+  width: 100%;
   height: 150px;
   display: flex;
   justify-content: center;

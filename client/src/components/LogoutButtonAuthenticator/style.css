@@ -17,11 +17,11 @@
 }
 
 .loggedInNavBarElementsContainer a {
-  color: #fff;
+  color: var(--jet);
 }
 
 .loggedInNavBarElementsContainer a:hover {
-  color: var(--banamania);
+  color: var(--carrotOrange);
 }
 
 .shoppingCartIcon {
