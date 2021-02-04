@@ -12,13 +12,13 @@
 
 .logoutButton {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: var(--jet);
   cursor: pointer;
   margin: 0px 10px 0px 0px;
   width: 130px;
   height: 40px;
   font-size: 15px;
-  border: 2px solid #fff;
+  border: 2px solid var(--jet);
   border-radius: 10px;
   background-color: transparent;
 }
@@ -28,7 +28,7 @@
 }
 
 .logoutButton:hover {
-  border: 2px solid var(--banamania);
+  border: 2px solid var(--carrotOrange);
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--banamania);
+  color: var(--carrotOrange);
 }

@@ -7,7 +7,6 @@ import Navbar from "../Navbar/Navbar"
 const HeroCover = () => {
     return (
         <section className="heroCoverSection">
-            <Navbar />
             <div className="heroCoverSectionContainer">
                 <img src={honeyHomageLogoWhite} alt="honeyHomageLogoWhite" className="honeyHomageLogo" />
                 <div className="text-center">
@@ -15,7 +14,6 @@ const HeroCover = () => {
                 </div>
                 <div className="heroCoverButtons">
                     <LoginButtonAuthenticator />
-
                     <a href="#store"><button className="shopButton">Shop</button></a>
                 </div>
                 <div className="socialMediaLinksContainer" id="contactUs">

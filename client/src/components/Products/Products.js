@@ -13,7 +13,7 @@ import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
 const Products = ({ products }) => {
 
 	return (
-		<section className="productsSection">
+		<section className="productsSection" id="store">
 			<section className="titleSection">
 
             </section>
