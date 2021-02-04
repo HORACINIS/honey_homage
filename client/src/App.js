@@ -32,17 +32,33 @@ const App = () => {
     return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
   }
 
+
+
+  // Everytime the addToCart btn is pressed, the object itself returns back to this function
+  function selectedProducts (selectedItems, qty) {
+    const {title} = selectedItems;
+    console.log(title);
+    console.log(qty);
+    
+  }
+
+
+
+
+
+
+
   return (
     <Switch>
       <div className="App">
         <Navbar />
         <Route exact path='/'>
           <HeroCover />
-          <Products products={products} />
+          <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart {...props} />} />
-        <Route exact path='/AdminPortal' component={AdminPortal}/>
+        <Route exact path='/AdminPortal' component={AdminPortal} />
         <Footer />
       </div>
     </Switch>
