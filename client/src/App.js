@@ -25,7 +25,7 @@ const App = () => {
     setProducts(data)
   }
   useEffect(() => {
-    fetchProductsApi()
+    fetchProductsApi();
   }, [])
 
   if (isLoading) {
@@ -50,8 +50,3 @@ const App = () => {
 }
 
 export default App;
-
-
-<Route exact path="/">
-  <Redirect to="/home" />
-</Route>

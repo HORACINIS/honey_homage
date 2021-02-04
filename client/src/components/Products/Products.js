@@ -18,10 +18,10 @@ const Products = ({ products }) => {
 				Products
             </section>
 			<div className="productsContainer">
-				{products && products.map((item, i ) => {
+				{products && products.map((item, i) => {
 					const { _id, title, image, price, sale, details, inStock } = item;
 
-					const imageSrc = [honeyType01, honeyType02, honeyType03, honeyType04, 
+					const imageSrc = [honeyType01, honeyType02, honeyType03, honeyType04,
 						honeyType05, honeyType06, honeyType07, honeyType08, honeyType09];
 
 					return (
@@ -38,7 +38,7 @@ const Products = ({ products }) => {
 							<div>
 								<form className="productListingForm">
 									<label>Qty:</label>
-									<input type="number" placeholder="0" className="productListingQuanityInput"/>
+									<input type="number" placeholder="0" className="productListingQuanityInput" />
 									<button className="productListingAddToCarButton">Add to Cart</button>
 								</form>
 							</div>

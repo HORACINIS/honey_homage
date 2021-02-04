@@ -15,12 +15,12 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navLinkContainer">
-                        <a href="#ourStory">Our Story</a>
-                        <p>|</p>
-                        <a href="#contactUs">Contact Us</a>
+                    <a href="#ourStory">Our Story</a>
+                    <p>|</p>
+                    <a href="#contactUs">Contact Us</a>
                 </div>
                 <div className="navUserContainer">
-                        <Link to='/shoppingCart'><LogoutButtonAuthenticator /></Link> 
+                    <Link to='/shoppingCart'><LogoutButtonAuthenticator /></Link>
                 </div>
             </section>
         </nav>

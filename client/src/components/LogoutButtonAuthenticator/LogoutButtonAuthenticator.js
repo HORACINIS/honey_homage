@@ -2,7 +2,6 @@
 
 import React from "react";
 import './style.css';
-
 import LogoutButton from "../LogoutButton/LogoutButton";
 import SignupButton from "../SignupButton/SignupButton";
 import CheckoutMeter from "../CheckoutMeter/CheckoutMeter";
