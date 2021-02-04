@@ -9,7 +9,7 @@ const AboutUs = () => {
         <section className="aboutUsSection" id="ourStory">
              <div className="AboutUsTextContainer">
                     <h1>Our Story</h1>
-                    <p>Before the outbreak of COVID-19, Australia had minimal time to react after taking a tragic blow of uncontrollable bushfires. Such destruction was vast, consuming both wildlife and rural homes. Affecting many farmers and crops, the road to recovery for our honey farm was steep after losing countless bees.</p>
+                    <p>We're a family owned and operated farm that has been producing organic honey for over six generations in Australia. Our bees are our family. In early 2020, we heartbreakingly lost over 90% of our bee family due to the devastating fires that ravaged through Australia. Since then, we have nurtured back our surviving family to health and are now ready to share their premium grade organic honey with Australia!</p>
             </div>
             <video className='videoTag' autoPlay loop muted>
                 <source src={honeyHomageCuteBee} type='video/mp4' />
