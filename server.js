@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 const db = require("./models");
+const mongoDBPW = ""
 
 const PORT = process.env.PORT || 3001;
 
@@ -20,7 +21,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://aBuiDev:dogmeat2020@honeyhomagecluster.zwmmp.mongodb.net/honeyHomageDB?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://aBuiDev:${mongoDBPW}@honeyhomagecluster.zwmmp.mongodb.net/honeyHomageDB?retryWrites=true&w=majority`, { useNewUrlParser: true });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
