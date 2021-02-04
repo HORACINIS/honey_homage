@@ -18,35 +18,16 @@ const Products = ({ products }) => {
 				Products
             </section>
 			<div className="productsContainer">
-				{products && products.map(item => {
+				{products && products.map((item, i ) => {
 					const { _id, title, image, price, sale, details, inStock } = item;
 
-					let imageSrc = ""
-
-					if (image === "honeyType01") {
-						imageSrc = honeyType01;
-					} else if (image === "honeyType02") {
-						imageSrc = honeyType02;
-					} else if (image === "honeyType03") {
-						imageSrc = honeyType03;
-					} else if (image === "honeyType04") {
-						imageSrc = honeyType04;
-					} else if (image === "honeyType05") {
-						imageSrc = honeyType05;
-					} else if (image === "honeyType06") {
-						imageSrc = honeyType06;
-					} else if (image === "honeyType07") {
-						imageSrc = honeyType07;
-					} else if (image === "honeyType08") {
-						imageSrc = honeyType08;
-					} else if (image === "honeyType09") {
-						imageSrc = honeyType09;
-					}
+					const imageSrc = [honeyType01, honeyType02, honeyType03, honeyType04, 
+						honeyType05, honeyType06, honeyType07, honeyType08, honeyType09];
 
 					return (
 						<div key={_id} className="productListingContainer">
 							<div className="productListingImageContainer">
-							    <img src={imageSrc} alt="honey product" className="productListingImage" />
+								<img src={imageSrc[i]} alt="honey product" className="productListingImage" />
 							</div>
 							<div className="productListingInfoContainer">
 								<h3>{title}</h3>
