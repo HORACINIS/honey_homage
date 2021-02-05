@@ -3,20 +3,19 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 
 const CheckoutMeter = ({ pickedItems }) => {
-  console.log(pickedItems.quantity)
-  // const [totalItemsQuantity, setTotalItemsQuantity] = useState('')
 
-  const [qtyOfItems, setQtyofItems] = useState(0);
+const {title, quantity} = pickedItems;
 
-  console.log(qtyOfItems)
 
-  useEffect(() => {
-    setQtyofItems(pickedItems.quantity)
-  }, [qtyOfItems])
+  console.log(title);
+  console.log(quantity);
+  
+
+  
 
   return (
     <span className="checkoutMeter">
-      {qtyOfItems}
+      {pickedItems.quantity}
     </span>
   );
 };

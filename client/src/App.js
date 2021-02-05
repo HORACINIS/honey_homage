@@ -49,7 +49,7 @@ const App = () => {
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
         </Route>
-        <Route path='/shoppingCart' render={(props) => <ShoppingCart {...props} />} />
+        <Route path='/shoppingCart' render={(props) => <ShoppingCart itemsInCart={selectedProducts} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
         <Footer />
       </div>
@@ -58,3 +58,6 @@ const App = () => {
 }
 
 export default App;
+
+
+
