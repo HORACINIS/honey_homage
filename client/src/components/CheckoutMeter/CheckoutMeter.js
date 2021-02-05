@@ -4,14 +4,14 @@ import "./style.css";
 
 const CheckoutMeter = ({ pickedItems }) => {
 
-const {title, quantity} = pickedItems;
+  const {title, quantity} = pickedItems;
 
-
-  console.log(title);
+  console.log(title)
   console.log(quantity);
-  
 
-  
+  let xx = [];
+  xx.concat(pickedItems)
+
 
   return (
     <span className="checkoutMeter">

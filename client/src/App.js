@@ -14,13 +14,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
 
 const App = () => {
-  let picked = [];
-  const [pickedItems, setPickedItems] = useState(picked);
 
   const { isLoading } = useAuth0();
   const url = '/products/all';
-
-  const [products, setProducts] = useState();
 
   async function fetchProductsApi() {
     const response = await fetch(url);
@@ -30,6 +26,11 @@ const App = () => {
   useEffect(() => {
     fetchProductsApi();
   }, []);
+
+  let picked = [];
+  const [pickedItems, setPickedItems] = useState(picked);
+
+  const [products, setProducts] = useState();
 
   if (isLoading) {
     return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
@@ -49,7 +50,7 @@ const App = () => {
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
         </Route>
-        <Route path='/shoppingCart' render={(props) => <ShoppingCart itemsInCart={selectedProducts} {...props} />} />
+        <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
         <Footer />
       </div>

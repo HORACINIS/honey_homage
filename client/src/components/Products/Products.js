@@ -42,7 +42,7 @@ const Products = ({ products, selectedProducts }) => {
 							<div>
 								<div className="productListingForm">
 									<label>Qty:</label>
-									<input type="number" placeholder='0' min='0' className="productListingQuanityInput" />
+									<input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" />
 									<button onClick={() => selectedProducts(item, qtyFunc(i))} className="productListingAddToCarButton">Add to Cart</button>
 								</div>
 							</div>
