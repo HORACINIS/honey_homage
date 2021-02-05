@@ -29,7 +29,7 @@ const App = () => {
   }
   useEffect(() => {
     fetchProductsApi();
-  }, [])
+  }, []);
 
   if (isLoading) {
     return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
@@ -37,13 +37,8 @@ const App = () => {
 
   // Everytime the addToCart btn is pressed, the object itself and the quantity of each item in Products return back to this function
   function selectedProducts(selectedItems, qty) {
-    // const { title } = selectedItems;
-    // console.log(title);
-    // console.log(qty);
-
-    setPickedItems({ ...selectedItems, total: qty });
+    setPickedItems({ ...selectedItems, quantity: qty });
   }
-  // console.log(pickedItems);
 
   return (
     <Switch>

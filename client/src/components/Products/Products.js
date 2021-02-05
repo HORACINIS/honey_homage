@@ -13,8 +13,7 @@ import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
 const Products = ({ products, selectedProducts }) => {
 
 	const qtyFunc = (index) => {
-		let qtyField = document.querySelectorAll('input.productListingQuanityInput')[index].value;
-		return qtyField;
+		return document.querySelectorAll('input.productListingQuanityInput')[index].value;
 	}
 
 	return (
