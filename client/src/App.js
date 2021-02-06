@@ -17,18 +17,18 @@ const App = () => {
 
   const { isLoading } = useAuth0();
   const url = '/products/all';
+  const [pickedItems, setPickedItems] = useState([]);
+  const [products, setProducts] = useState();
 
   async function fetchProductsApi() {
     const response = await fetch(url);
     const data = await response.json();
     setProducts(data)
   }
+
   useEffect(() => {
     fetchProductsApi();
   }, []);
-
-  const [pickedItems, setPickedItems] = useState([]);
-  const [products, setProducts] = useState();
 
   if (isLoading) {
     return <div className="loadingDiv"><i className="fas fa-spinner loadingSpinner"></i></div>
@@ -37,7 +37,8 @@ const App = () => {
   // Everytime the addToCart btn is pressed, the object itself and the quantity of each item in Products return back to this function
   function selectedProducts(selectedItems, qty) {
     let item = { ...selectedItems, quantity: qty };
-    setPickedItems([...pickedItems, item]);
+    setPickedItems(pickedItems => [...pickedItems, item]);
+    document.title = 'Items in Cart'
   }
 
   return (
