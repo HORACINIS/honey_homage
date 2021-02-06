@@ -16,6 +16,10 @@ const Products = ({ products, selectedProducts }) => {
 		return document.querySelectorAll('input.productListingQuanityInput')[index].value;
 	}
 
+	function addToCart(item, qty) {
+		return selectedProducts(item, qty)
+	}
+
 	return (
 		<section className="productsSection" id="store">
 			<section className="productsTitleSection">
@@ -43,7 +47,7 @@ const Products = ({ products, selectedProducts }) => {
 								<div className="productListingForm">
 									<label>Qty:</label>
 									<input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" />
-									<button onClick={() => selectedProducts(item, qtyFunc(i))} className="productListingAddToCarButton">Add to Cart</button>
+									<button onClick={() => addToCart(item, qtyFunc(i))} className="productListingAddToCarButton">Add to Cart</button>
 								</div>
 							</div>
 						</div>
@@ -55,3 +59,5 @@ const Products = ({ products, selectedProducts }) => {
 }
 
 export default Products;
+
+

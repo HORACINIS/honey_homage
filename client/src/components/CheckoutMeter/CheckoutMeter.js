@@ -4,13 +4,15 @@ import "./style.css";
 
 const CheckoutMeter = ({ pickedItems }) => {
 
-  const {title, quantity} = pickedItems;
+  // const {title, quantity} = pickedItems;
 
-  console.log(title)
-  console.log(quantity);
+  // console.log(title)
+  // console.log(quantity);
 
-  let xx = [];
-  xx.concat(pickedItems)
+  // let xx = [];
+  // xx.concat(pickedItems)
+
+  console.log(pickedItems)
 
 
   return (
