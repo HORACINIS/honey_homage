@@ -27,9 +27,7 @@ const App = () => {
     fetchProductsApi();
   }, []);
 
-  let picked = [];
-  const [pickedItems, setPickedItems] = useState(picked);
-
+  const [pickedItems, setPickedItems] = useState([]);
   const [products, setProducts] = useState();
 
   if (isLoading) {
@@ -38,7 +36,8 @@ const App = () => {
 
   // Everytime the addToCart btn is pressed, the object itself and the quantity of each item in Products return back to this function
   function selectedProducts(selectedItems, qty) {
-    setPickedItems({ ...selectedItems, quantity: qty });
+    let item = { ...selectedItems, quantity: qty };
+    setPickedItems([...pickedItems, item]);
   }
 
   return (
