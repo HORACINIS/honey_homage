@@ -9,6 +9,7 @@ import AboutUs from "./components/AboutUs/AboutUs.js";
 import Footer from "./components/Footer/Footer.js";
 import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
+import Testimonials from "./components/Testimonials/Testimonials"
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
@@ -49,6 +50,7 @@ const App = () => {
           <HeroCover />
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
+          <Testimonials />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
