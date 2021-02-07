@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Products from './Products';
 import Quantity from './Quantity';
-import axios from 'axios';
+import Axios from 'axios';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const AddToCart = (data) => {
@@ -13,11 +13,13 @@ const AddToCart = (data) => {
     
 
     const addItem = () => {
-        axios.post('http:localhost:3000/', {cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}})
-    .then((response) => {console.log(response);},
-    (error) => {console.log(error);
-    });}
-    
+        Axios.post('http://localhost:3000/#store', {
+            cart_id: cart_id,
+            product: product,
+            price: price,
+            quantity: cartQty}
+        );
+    }
 
     return (
         <div>
