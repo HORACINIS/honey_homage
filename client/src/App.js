@@ -7,7 +7,7 @@ import Products from './components/Products/Products';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import Footer from "./components/Footer/Footer.js";
-import Profile from "./components/UserProfile/UserProfile.js";
+import UserProfile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 import Testimonials from "./components/Testimonials/Testimonials"
 import Orders from "./components/Orders/Orders"
@@ -58,6 +58,7 @@ const App = () => {
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
+        <Route exact path='/UserProfile' component={UserProfile} />
         <Footer />
       </div>
     </Switch>
