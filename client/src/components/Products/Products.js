@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
+import AddToCart from './AddToCart';
+// import Quantity from './Quantity'
 import honeyType01 from '../../images/ProductImages/honeyType01.jpg';
 import honeyType02 from '../../images/ProductImages/honeyType02.jpg';
 import honeyType03 from '../../images/ProductImages/honeyType03.jpg';
@@ -12,13 +14,13 @@ import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
 
 const Products = ({ products, selectedProducts }) => {
 
-	const qtyFunc = (index) => {
-		return document.querySelectorAll('input.productListingQuanityInput')[index].value;
-	}
+	// const qtyFunc = (index) => {
+	// 	return document.querySelectorAll('input.productListingQuanityInput')[index].value;
+	// }
 
-	function addToCart(item, qty) {
-		return selectedProducts(item, qty)
-	}
+	// function addToCart(item, qty) {
+	// 	return selectedProducts(item, qty)
+	// }
 
 	return (
 		<section className="productsSection" id="store">
@@ -46,8 +48,9 @@ const Products = ({ products, selectedProducts }) => {
 							<div>
 								<div className="productListingForm">
 									<label>Qty:</label>
-									<input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" />
-									<button onClick={() => addToCart(item, qtyFunc(i))} className="productListingAddToCarButton">Add to Cart</button>
+									{/* <Quantity/> */}
+									{/* <input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" /> */}
+									<AddToCart item={item}/>
 								</div>
 							</div>
 						</div>
