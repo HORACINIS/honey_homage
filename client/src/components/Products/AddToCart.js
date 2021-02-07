@@ -5,11 +5,11 @@ import axios from 'axios';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const AddToCart = (data) => {
-    const [Qty, setQty] = useState({Qty: ''});
+    const [cartQty, setCartQty] = useState({ Qty: ''});
     const { user } = useAuth0();
-    const UserId =  user.id;
-    const Title = data.title;
-    const Price = data.price;
+    const cart_id =  user.sub;
+    const product = data.name;
+    const price = data.price;
     
 
     const addItem = () => {
@@ -17,12 +17,12 @@ const AddToCart = (data) => {
     // .then((response) => {console.log(response);},
     // (error) => {console.log(error);
     // });
-    console.log({cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}});
-    }
+    console.log({cart_id, product, price, cartQty});
+    console.log(user)}
 
     return (
         <div>
-            <input type='number' name='qty' placeholder='0' min='0' max='25' onChange={(e) => {setQty ({Qty: e.target.value })}}></input>
+            <input type='number' name='qty' placeholder='0' min='0' max='25' onChange={(e) => {setCartQty ({ Qty: e.target.value })}}></input>
             <button onClick={addItem}>Add To Cart</button>
         </div>
     );
