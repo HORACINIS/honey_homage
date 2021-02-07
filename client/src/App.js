@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer.js";
 import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 import Testimonials from "./components/Testimonials/Testimonials"
+import Orders from "./components/Orders/Orders"
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
@@ -51,6 +52,7 @@ const App = () => {
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
           <Testimonials />
+          <Orders />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />

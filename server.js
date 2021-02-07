@@ -35,6 +35,15 @@ app.get('/products/all', (request, response) => {
   });
 });
 
+app.get('/orders/all', (request, response) => {
+  db.Order.find({}, (error, data) => {
+    response.json(data);
+  });
+});
+
+
+
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
