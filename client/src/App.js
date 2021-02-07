@@ -11,6 +11,7 @@ import Profile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 import Testimonials from "./components/Testimonials/Testimonials"
 import Orders from "./components/Orders/Orders"
+import SellingPoints from "./components/SellingPoints/SellingPoints"
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
@@ -49,6 +50,7 @@ const App = () => {
         <Navbar pickedItems={pickedItems} />
         <Route exact path='/'>
           <HeroCover />
+          <SellingPoints />
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
           <Testimonials />
