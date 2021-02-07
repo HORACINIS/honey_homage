@@ -23,7 +23,7 @@ const LoginButtonAuthenticator = ({ pickedItems }) => {
         <AdminButtonAuthenticator />
       </Link>
       <LogoutButton />
-      <Link to='/userProfile'>
+      <Link to='/UserProfile'>
         <a><i className="fas fa-user-circle"></i></a>
       </Link>
       <Link to='/shoppingCart'>

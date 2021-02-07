@@ -8,6 +8,10 @@ const Profile = () => {
   const { user } = useAuth0();
   const { name, picture, email } = user;
 
+  const viewUser = () => {
+    console.log(user);
+  }
+
   return (
     <div>
       <div className="row align-items-center profile-header">
@@ -28,6 +32,7 @@ const Profile = () => {
           {JSON.stringify(user, null, 2)}
         </pre>
       </div>
+      <button onClick={viewUser}>View User Details</button>
     </div>
   );
 };
