@@ -10,17 +10,26 @@ const CheckoutMeter = ({ pickedItems }) => {
   const [itemQty, setItemQty] = useState(0);
   console.log(itemQty)
 
-  useEffect(() => {
-    pickedItems.map(item => {
-      const { quantity } = item;
-      if (+quantity > counter) {
-        counter += +item.quantity
-      } else if (+quantity < counter) {
-        counter -= +quantity
-      }
+  // useEffect(() => {
+  //   pickedItems.map(item => {
+  //     const { quantity } = item;
+  //     if (+quantity > counter) {
+  //       counter += +item.quantity
+  //     } else if (+quantity < counter) {
+  //       counter -= +quantity
+  //     }
+  //     setItemQty(counter);
+  //   })
+  // }, [pickedItems]);
+
+
+    useEffect(() => {
+      counter = pickedItems.length;
+
       setItemQty(counter);
-    })
+  
   }, [pickedItems]);
+
 
 
   // Saving items in localStorage ***

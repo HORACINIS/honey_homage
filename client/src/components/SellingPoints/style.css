@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+  --textColor: #686868;
+}
+
+.sellingPointsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sellingPointElementContainer01 {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sellingPointVideo01 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.sellingPointElementContainer01 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  z-index: 1;
+  color: #fff;
+}
+
+.sellingPointElementContainer03 {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sellingPointVideo03 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.sellingPointElementContainer03 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  z-index: 1;
+  color: #fff;
+}
