@@ -13,12 +13,11 @@ const AddToCart = (data) => {
     
 
     const addItem = () => {
-    //     axios.post('http:localhost:3000/', {cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}})
-    // .then((response) => {console.log(response);},
-    // (error) => {console.log(error);
-    // });
-    console.log({cart_id, product, price, cartQty});
-    console.log(user)}
+        axios.post('http:localhost:3000/', {cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}})
+    .then((response) => {console.log(response);},
+    (error) => {console.log(error);
+    });}
+    
 
     return (
         <div>

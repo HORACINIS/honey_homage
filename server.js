@@ -41,6 +41,14 @@ app.get('/orders/all', (request, response) => {
   });
 });
 
+app.post('http:localhost:3000/', (request, response) => {
+  const cart_id = request.body.cart_id;
+  const product = request.body.product;
+  const price = request.body.price;
+  const quantity = request.body.quantity;
+  db.Cart.save({})
+}
+
 
 
 
