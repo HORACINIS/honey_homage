@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import Products from './Products';
 import Quantity from './Quantity';
-import {useAuth0} from '@auth0/auth0-react'
+import axios from 'axios';
+import { useAuth0 } from "@auth0/auth0-react";
 
-const AddToCart = (item) => {
+const AddToCart = (data) => {
     const [Qty, setQty] = useState({Qty: ''});
+    const { user } = useAuth0();
     const UserId =  user.id;
-    const Title = item.title;
-    const Price = item.price;
+    const Title = data.title;
+    const Price = data.price;
     
 
     const addItem = () => {
-        axios.post('http:localhost:3000/', {cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}})
-    .then((response) => {console.log(response);},
-    (error) => {console.log(error);
-    });
+    //     axios.post('http:localhost:3000/', {cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}})
+    // .then((response) => {console.log(response);},
+    // (error) => {console.log(error);
+    // });
+    console.log({cart_id : {UserId}, product: {Title}, price: {Price}, quantity: {Qty}});
     }
 
     return (

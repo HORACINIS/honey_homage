@@ -50,7 +50,7 @@ const Products = ({ products, selectedProducts }) => {
 									<label>Qty:</label>
 									{/* <Quantity/> */}
 									{/* <input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" /> */}
-									<AddToCart item={item}/>
+									<AddToCart data={_id, title, price}/>
 								</div>
 							</div>
 						</div>
