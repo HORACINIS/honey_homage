@@ -1,50 +1,45 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./style.css";
 
-class CheckoutPortal extends Component {
 
-    state = {
+const CheckoutPortal = () => {
+    
+    const [formData, setFormData] = useState ({
         firstName: "",
         lastName: "",
         shippingAddress: "",
         contactNumber: "",
         comments: ""
-      };
+      });
 
-    handleFormSubmit = (event) => {
-        let value = event.target.value;
-        const name = event.target.name;
+    // handleFormSubmit = (event) => {
+    //     let value = event.target.value;
+    //     const name = event.target.name;
 
-        this.setState({
-            [name]: value
-          });
+        // this.setState({
+        //     [name]: value
+        //   });
 
 
+
+    
+
+    const handleFormSubmit = event => {
+        event.preventDefault();
+        console.log(formData);
         fetch('/orders/update', {
             method: 'POST',
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(this.state.name)
+            body: JSON.stringify(formData)
         }).then(() => {
             console.log("Database Item Updated");
         })
-    };
+    }
 
-    handleFormSubmit = event => {
-        event.preventDefault();
-        this.setState({
-            firstName: "",
-            lastName: "",
-            shippingAddress: "",
-            contactNumber: "",
-            comments: ""
-            });
-        }
-
-        render() {
             return (
                 <div>
                     <div>
@@ -57,80 +52,50 @@ class CheckoutPortal extends Component {
 
 
                         <input
-                            value={this.state.firstName}
+                            value={formData.firstName}
                             name="firstName"
-                            onChange={this.handleInputChange}
+                            onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                             type="text"
                             placeholder="First Name"
                         />
                         <input
-                            value={this.state.lastName}
+                            value={formData.lastName}
                             name="lastName"
-                            onChange={this.handleInputChange}
+                            onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                             type="text"
                             placeholder="Last Name"
                         />
                         <input
-                            value={this.state.shippingAddress}
+                            value={formData.shippingAddress}
                             name="shippingAddress"
-                            onChange={this.handleInputChange}
+                            onChange={(e) => setFormData({...formData, shippingAddress: e.target.value})}
                             type="text"
                             placeholder="Shipping Address"
                         />
                         <input
-                            value={this.state.contactNumber}
+                            value={formData.contactNumber}
                             name="contactNumber"
-                            onChange={this.handleInputChange}
+                            onChange={(e) => setFormData({...formData, contactNumber: e.target.value})}
                             type="text"
                             placeholder="Contact Number"
                         />
                         <textarea
-                            value={this.state.comments}
+                            value={formData.comments}
                             name="comments"
-                            onChange={this.handleInputChange}
+                            onChange={(e) => setFormData({...formData, comments: e.target.value})}
                             type="text"
                             placeholder="Comments"
                         />
-
-
-
-                            {/* <input
-                                onChange={handleFormSubmit}
-                                name="FirstName"
-                                type="text"
-                                placeholder="First Name"
-                            />
-                            <input
-                                name="LastName"
-                                type="text"
-                                placeholder="Last Name"
-                            />
-                            <input
-                                name="ContactNumber"
-                                type="text"
-                                placeholder="Contact Number"
-                            />
-                            <input
-                                name="ShippingAddress"
-                                type="text"
-                                placeholder="Shipping Address"
-                            />
-                            <textarea
-                                name="Comments"
-                                type="text"
-                                placeholder="Comments"
-                            /> */}
-                            <button onClick={this.handleFormSubmit}>Submit</button>
+                            <button onClick={handleFormSubmit}>Submit</button>
                         </form>
                     </div>
                 </div>
             )
-        }
-    };
+    
 
 
 
-      
+};     
 
 
 export default CheckoutPortal;
