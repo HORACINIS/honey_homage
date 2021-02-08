@@ -19,17 +19,20 @@ const ShoppingCart = ({ pickedItems }) => {
         if (pickedItems.length > 0) {
             return (
                 <div className="checkoutConfirmationSection">
-                    <div>
-                        <h3>Order Total: ${orderTotal}0</h3>
+                    <div className="checkoutConfirmationContainer">
+                        <div className="checkoutInfoContainer">
+                            <h3>Order Total: ${orderTotal}0</h3>
+                        </div>
+                        <div className="checkoutInfoContainer">
+                           <button className="confirmCheckoutButton">Confirm Checkout</button>
+                        </div>
                     </div>
-                    <button>Confirm Checkout</button>
                 </div>
             )
         } else {
             return;
         }
     }
-
 
     return (
         <div>
