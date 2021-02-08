@@ -12,9 +12,21 @@ import honeyType08 from '../../images/ProductImages/honeyType08.jpg';
 import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
 
 const ShoppingCart = ({ pickedItems }) => {
-    console.log(pickedItems)
 
     let orderTotal = 0;
+
+    function createOrder() {
+        fetch('/orders/create', {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+            body: JSON.stringify(pickedItems[0])
+        }).then(() => {
+            console.log("Hello World");
+        })
+    }
 
     const checkoutConfirmationControls = () => {
         if (pickedItems.length > 0) {
@@ -26,7 +38,7 @@ const ShoppingCart = ({ pickedItems }) => {
                         </div>
                         <div className="checkoutInfoContainer">
                             <Link to='/CheckoutPortal'>
-                           <button className="confirmCheckoutButton">Confirm Checkout</button>
+                               <button className="confirmCheckoutButton">Confirm Checkout</button>
                            </Link>
                         </div>
                     </div>
@@ -36,6 +48,8 @@ const ShoppingCart = ({ pickedItems }) => {
             return;
         }
     }
+
+    createOrder();
 
     return (
         <div className="shoppingCartItemSectionMain">

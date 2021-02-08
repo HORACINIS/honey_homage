@@ -41,6 +41,19 @@ app.get('/orders/all', (request, response) => {
   });
 });
 
+app.post('/orders/create', (request, response) => {
+  const orderItems = request.body
+  console.log(orderItems);
+  db.Order.create({ "items": request.body }, (error, data) => {
+    console.log("Hello World");
+  })
+});
+
+app.get('/orders/all', (request, response) => {
+  db.Order.find({}, (error, result) => {
+    response.json(result);
+  })
+});
 
 
 
