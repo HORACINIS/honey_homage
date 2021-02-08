@@ -15,6 +15,22 @@ const ShoppingCart = ({ pickedItems }) => {
 
     let orderTotal = 0;
 
+    const checkoutConfirmationControls = () => {
+        if (pickedItems.length > 0) {
+            return (
+                <div className="checkoutConfirmationSection">
+                    <div>
+                        <h3>Order Total: ${orderTotal}0</h3>
+                    </div>
+                    <button>Confirm Checkout</button>
+                </div>
+            )
+        } else {
+            return;
+        }
+    }
+
+
     return (
         <div>
             <h1>Shopping Cart</h1>
@@ -66,10 +82,8 @@ const ShoppingCart = ({ pickedItems }) => {
                     )
                 })}
             </div>
-            <div>
-                <h3>Order Total: ${orderTotal}</h3>
-                <button>Confirm Checkout</button>
-            </div>
+
+            {checkoutConfirmationControls()}
 
         </div>
     )
