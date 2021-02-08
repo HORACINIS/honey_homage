@@ -15,6 +15,10 @@ const Navbar = ({ pickedItems }) => {
                     </Link>
                 </div>
                 <div className="navLinkContainer">
+                    <Link to='/'>
+                        <a href="#ourStory">Home</a>
+                    </Link>
+                    <p>|</p>
                     <a href="#ourStory">Our Story</a>
                     <p>|</p>
                     <a href="#contactUs">Contact Us</a>

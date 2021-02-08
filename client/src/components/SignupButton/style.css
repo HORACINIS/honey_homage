@@ -11,20 +11,23 @@
 }
 
 .signupButton {
-    cursor: pointer;
-    margin: 0px 10px 0px 0px;
-    width: 100px;
-    height: 30px;
-    border: 1px solid var(--jet);
-    border-radius: 10px;
-    background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--jet);
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  border: 2px solid var(--jet);
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .signupButton:focus {
-    outline: none;
+  outline: none;
 }
 
 .signupButton:hover {
-    border: 1px solid var(--carrotOrange);
-    color: var(--carrotOrange);
+  border: 2px solid var(--carrotOrange);
+  color: var(--carrotOrange);
 }
