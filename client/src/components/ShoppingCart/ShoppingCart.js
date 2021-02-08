@@ -21,7 +21,7 @@ const ShoppingCart = ({ pickedItems }) => {
                 <div className="checkoutConfirmationSection">
                     <div className="checkoutConfirmationContainer">
                         <div className="checkoutInfoContainer">
-                            <h3>Order Total: ${orderTotal}0</h3>
+                            <h3>Order Total: ${orderTotal.toFixed(2)}</h3>
                         </div>
                         <div className="checkoutInfoContainer">
                            <button className="confirmCheckoutButton">Confirm Checkout</button>
@@ -35,7 +35,7 @@ const ShoppingCart = ({ pickedItems }) => {
     }
 
     return (
-        <div>
+        <div className="shoppingCartItemSectionMain">
             <h1>Shopping Cart</h1>
             {!pickedItems.length > 0 && <h2>No items in cart</h2>}
 
@@ -79,7 +79,7 @@ const ShoppingCart = ({ pickedItems }) => {
                             </div>
                             <div>
                                 <h5>Quantity: {quantity} units</h5>
-                                <p>Total: ${totalPerItem}0</p>
+                                <p>Total: ${totalPerItem.toFixed(2)}</p>
                             </div>
                         </div>
                     )
