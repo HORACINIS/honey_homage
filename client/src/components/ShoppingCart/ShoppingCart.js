@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 import honeyType01 from '../../images/ProductImages/honeyType01.jpg';
 import honeyType02 from '../../images/ProductImages/honeyType02.jpg';
 import honeyType03 from '../../images/ProductImages/honeyType03.jpg';
@@ -24,7 +25,9 @@ const ShoppingCart = ({ pickedItems }) => {
                             <h3>Order Total: ${orderTotal.toFixed(2)}</h3>
                         </div>
                         <div className="checkoutInfoContainer">
+                            <Link to='/CheckoutPortal'>
                            <button className="confirmCheckoutButton">Confirm Checkout</button>
+                           </Link>
                         </div>
                     </div>
                 </div>
@@ -36,7 +39,7 @@ const ShoppingCart = ({ pickedItems }) => {
 
     return (
         <div className="shoppingCartItemSectionMain">
-            <h1>Shopping Cart</h1>
+            <h1 className="shoppingCartTitle">Shopping Cart</h1>
             {!pickedItems.length > 0 && <h2>No items in cart</h2>}
 
             <div className="shoppingCartItemSection">

@@ -5,6 +5,7 @@ import HeroCover from "./components/HeroCover/HeroCover.js";
 import Navbar from "./components/Navbar/Navbar.js";
 import Products from './components/Products/Products';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
+import CheckoutPortal from './components/CheckoutPortal/CheckoutPortal';
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import Footer from "./components/Footer/Footer.js";
 import UserProfile from "./components/UserProfile/UserProfile.js";
@@ -58,6 +59,7 @@ const App = () => {
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
         <Route exact path='/UserProfile' component={UserProfile} />
+        <Route exact path='/CheckoutPortal' component={CheckoutPortal} />
         <Footer />
       </div>
     </Switch>
