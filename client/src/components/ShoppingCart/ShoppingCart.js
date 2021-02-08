@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from "@auth0/auth0-react";
+
 import honeyType01 from '../../images/ProductImages/honeyType01.jpg';
 import honeyType02 from '../../images/ProductImages/honeyType02.jpg';
 import honeyType03 from '../../images/ProductImages/honeyType03.jpg';
@@ -12,17 +14,25 @@ import honeyType08 from '../../images/ProductImages/honeyType08.jpg';
 import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
 
 const ShoppingCart = ({ pickedItems }) => {
+    const { user } = useAuth0();
+    const { name, email, sub } = user;
 
     let orderTotal = 0;
 
     function createOrder() {
+        let initialOrderData = {pickedItems};
+        initialOrderData.user_id = sub;
+        initialOrderData.email = email;
+        initialOrderData.name = name;
+        initialOrderData.total = orderTotal;
+        initialOrderData.status = "Processing"
         fetch('/orders/create', {
             method: 'POST',
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
               },
-            body: JSON.stringify(pickedItems[0])
+            body: JSON.stringify(initialOrderData)
         }).then(() => {
             console.log("Item Saved to Database");
         })

@@ -4,10 +4,19 @@ import "./style.css";
 
 const CheckoutPortal = () => {
     const { user } = useAuth0();
-    const { name, picture, email } = user;
+    const { name, email, sub } = user;
 
     const submitOrder = () => {
-
+        fetch('/orders/update', {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+            body: JSON.stringify({})
+        }).then(() => {
+            console.log("Item Saved to Database");
+        })
     }
 
 
@@ -21,14 +30,27 @@ const CheckoutPortal = () => {
             <div>
                 <form className="form">
                     <input
-                        value=""
-                        name="firstName"
+                        name="First Name"
                         type="text"
                         placeholder="First Name"
                     />
                     <input
-                        value=""
-                        name="lastName"
+                        name="Last Name"
+                        type="text"
+                        placeholder="Last Name"
+                    />
+                    <input
+                        name="Contact Number"
+                        type="text"
+                        placeholder="First Name"
+                    />
+                    <input
+                        name="Shipping Address"
+                        type="text"
+                        placeholder="Last Name"
+                    />
+                    <textarea
+                        name="Comments"
                         type="text"
                         placeholder="Last Name"
                     />
