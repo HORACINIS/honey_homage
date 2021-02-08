@@ -23,12 +23,12 @@ function Testimonials() {
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        name={'Katie Maloud'} place={" - Sydney, NSW"}
                         image={ProfileImage02}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Melbourne, VIC"}
+                        name={'Charlie Hernandez'} place={" - Melbourne, VIC"}
                         image={ProfileImage03}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
@@ -37,17 +37,17 @@ function Testimonials() {
             <Carousel.Item>
                 <div className="testimonialSlideContainer">
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Gold Coast, QLD"}
+                        name={'Greg Meedus'} place={" - Gold Coast, QLD"}
                         image={ProfileImage04}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Melbourne, VIC"}
+                        name={'Ben Chapman'} place={" - Melbourne, VIC"}
                         image={ProfileImage05}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Brisbane, QLD"}
+                        name={'David Melon'} place={" - Brisbane, QLD"}
                         image={ProfileImage06}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
@@ -56,17 +56,17 @@ function Testimonials() {
             <Carousel.Item>
                 <div className="testimonialSlideContainer">
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Perth, WA"}
+                        name={'Sonya Meadow'} place={" - Perth, WA"}
                         image={ProfileImage07}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        name={'Margaret Nguyen'} place={" - Sydney, NSW"}
                         image={ProfileImage08}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
                     <Testimonial
-                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        name={'Justin Beard'} place={" - Sydney, NSW"}
                         image={ProfileImage09}
                         testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
                     />
