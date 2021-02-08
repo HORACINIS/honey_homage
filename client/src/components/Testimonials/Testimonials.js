@@ -15,93 +15,79 @@ function Testimonials() {
 
     return (
         <Carousel>
-        <Carousel.Item>
-            <div className="testimonialSlideContainer">
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage01} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Sydney, NSW</p>
-                    </div>
+            <Carousel.Item>
+                <div className="testimonialSlideContainer">
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Canberra, ACT"}
+                        image={ProfileImage01}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        image={ProfileImage02}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Melbourne, VIC"}
+                        image={ProfileImage03}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
                 </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage02} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Sydney, NSW</p>
-                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className="testimonialSlideContainer">
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Gold Coast, QLD"}
+                        image={ProfileImage04}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Melbourne, VIC"}
+                        image={ProfileImage05}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Brisbane, QLD"}
+                        image={ProfileImage06}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
                 </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage03} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Melbourne, VIC</p>
-                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className="testimonialSlideContainer">
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Perth, WA"}
+                        image={ProfileImage07}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        image={ProfileImage08}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
+                    <Testimonial
+                        name={'Karen Bogdan'} place={" - Sydney, NSW"}
+                        image={ProfileImage09}
+                        testimony={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"}
+                    />
                 </div>
-            </div>
-        </Carousel.Item>
-        <Carousel.Item>
-            <div className="testimonialSlideContainer">
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage04} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Gold Coast, QLD</p>
-                    </div>
-                </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage05} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Melbourne, VIC</p>
-                    </div>
-                </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage06} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Brisbane, QLD</p>
-                    </div>
-                </div>
-            </div>
-        </Carousel.Item>
-        <Carousel.Item>
-            <div className="testimonialSlideContainer">
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage07} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Perth, WA</p>
-                    </div>
-                </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage08} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Sydney, NSW</p>
-                    </div>
-                </div>
-                <div className="testimonialElementContainer">
-                    <img src={ProfileImage09} alt="randomProfileImage01" className="testimonialProfileImage"/>
-                    <div className="testimonialTextContainer">
-                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus dolore tempora aperiam neque, voluptas a!"</p>
-                        <h3>Karen Bogdan</h3>
-                        <p> - Sydney, NSW</p>
-                    </div>
-                </div>
-            </div>
-        </Carousel.Item>
-      </Carousel>
+            </Carousel.Item>
+        </Carousel>
     );
 
 };
 
 export default Testimonials;
+
+const Testimonial = ({ name, place, image, testimony }) => {
+    return (
+        <div className="testimonialElementContainer">
+            <img src={image} alt="randomProfileImage" className="testimonialProfileImage" />
+            <div className="testimonialTextContainer">
+                <p>{testimony}</p>
+                <h3>{name}</h3>
+                <p>{place}</p>
+            </div>
+        </div>
+    )
+}
