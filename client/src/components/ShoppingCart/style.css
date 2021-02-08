@@ -10,6 +10,14 @@
   --textColor: #686868;
 }
 
+.shoppingCartTitle {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .shoppingCartItemSectionMain {
   margin: 0px 0px 300px 0px;
 }
