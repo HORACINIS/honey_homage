@@ -14,7 +14,7 @@ import ProfileImage09 from './Images/09.jpg';
 function Testimonials() {
 
     return (
-        <Carousel>
+        <Carousel className="carouselSection">
             <Carousel.Item>
                 <div className="testimonialSlideContainer">
                     <Testimonial

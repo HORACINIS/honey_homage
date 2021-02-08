@@ -11,6 +11,7 @@
 }
 
 .testimonialSlideContainer {
+  margin: 0px 0px 150px 0px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,4 +30,8 @@
   height: 120px;
   border-radius: 50%;
   margin: 0px 0px 25px 0px;
+}
+
+.carouselSection {
+  margin: 0px 0px 150px 0px;
 }

@@ -1,35 +1,81 @@
-.shoppingCartItemSection {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --banamania: #ffe9ac;
+  --maxYellowRed: #ffc45f;
+  --carrotOrange: #f18f01;
+  --vermilion: #c73e1d;
+  --jet: #2d2d2d;
+  --textColor: #686868;
 }
 
+.shoppingCartItemSectionMain {
+  margin: 0px 0px 300px 0px;
+}
+
+.shoppingCartItemSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .shoppingCartItemContainer {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: 25px 0px 25px 0px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 25px 0px 25px 0px;
 }
 
 .shoppingCartItemImage {
-    width: 200px;
+  width: 200px;
 }
 
 .checkoutConfirmationSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.checkoutInfoContainer {
+  margin: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkoutInfoContainer h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--carrotOrange);
 }
 
 .checkoutConfirmationContainer {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 50px 0px 0px 0px;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid var(--jet);
+}
+
+.confirmCheckoutButton {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--jet);
+  color: #fff;
+  transition: 0.25s;
+}
+
+.confirmCheckoutButton:hover {
+  background-color: var(--carrotOrange);
 }
