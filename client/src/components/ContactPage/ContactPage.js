@@ -30,9 +30,9 @@ const ContactPage = () => {
                     <div className="content">
                       <h3>Emails</h3>
                       <h4>General Information:</h4>
-                      <a href="andrew.bui.au@gmail.com">El Tigre</a>
+                      <a href="mailto:andrew.bui.au@gmail.com">El Tigre</a>
                       <h4>Support:</h4>
-                      <a href="horacinis@gmail.com">El Guapo</a>
+                      <a href="mailto:horacinis@gmail.com">El Guapo</a>
                     </div>
                 </div>
                 
