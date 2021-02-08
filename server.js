@@ -55,6 +55,8 @@ app.post('/orders/create', (request, response) => {
 });
 
 app.post('/orders/update', (request, response) => {
+  const updateItems = request.body
+  console.log(updateItems);
   console.log("Hello World!");
 })
 
