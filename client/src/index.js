@@ -6,6 +6,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history"
 import { ExternalLink } from 'react-external-link';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Router>

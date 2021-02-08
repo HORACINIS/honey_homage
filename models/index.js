@@ -3,5 +3,5 @@ module.exports = {
     // HoneyHUD: require("./HoneyHUD"),
     Product: require("./Product"),
     // User: require("./User"),
-    // Order: require("./Order")
+    Order: require("./Order")
   };

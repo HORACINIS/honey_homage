@@ -69,6 +69,7 @@
 }
 
 .navLinkContainer a:hover {
+  text-decoration: none;
   color: var(--carrotOrange);
 }
 

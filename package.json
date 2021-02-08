@@ -21,12 +21,13 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
-    "@react-google-maps/api": "^2.1.1",
+    "bootstrap": "^4.6.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mongojs": "^3.1.0",
     "mongoose": "^5.11.14",
     "react-external-link": "^1.2.0",
+    "react-bootstrap": "^1.4.3",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1"
   }
