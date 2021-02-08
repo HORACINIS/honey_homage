@@ -1,0 +1,21 @@
+.shoppingCartItemSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.shoppingCartItemContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 25px 0px 25px 0px;
+}
+
+.shoppingCartItemImage {
+    width: 200px;
+}
