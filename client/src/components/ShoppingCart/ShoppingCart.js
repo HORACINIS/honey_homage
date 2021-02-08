@@ -24,12 +24,35 @@ const ShoppingCart = ({ pickedItems }) => {
                 {pickedItems.map((item, index) => {
                     const { _id, title, image, quantity, details, price } = item
                     const totalPerItem = quantity * price;
-                    
+        
                     orderTotal += totalPerItem;
+
+                    let cartItemImage = "";
+
+                    if (image === "honeyType01") {
+                        cartItemImage = honeyType01;
+                    } else if (image === "honeyType02") {
+                        cartItemImage = honeyType02;
+                    } else if (image === "honeyType03") {
+                        cartItemImage = honeyType03;
+                    } else if (image === "honeyType04") {
+                        cartItemImage = honeyType04;
+                    } else if (image === "honeyType05") {
+                        cartItemImage = honeyType05;
+                    } else if (image === "honeyType06") {
+                        cartItemImage = honeyType06;
+                    } else if (image === "honeyType07") {
+                        cartItemImage = honeyType07;
+                    } else if (image === "honeyType08") {
+                        cartItemImage = honeyType08;
+                    } else if (image === "honeyType09") {
+                        cartItemImage = honeyType09;
+                    } 
+
                     return (
                         <div key={_id} className="shoppingCartItemContainer">
                             <div>
-                                <img src={honeyType01} alt="honey product" className="shoppingCartItemImage"></img>
+                                <img src={cartItemImage} alt="honey product" className="shoppingCartItemImage"></img>
                             </div>
                             <div>
                                 <h5>{title}</h5>
