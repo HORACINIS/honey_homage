@@ -6,16 +6,19 @@ const CheckoutPortal = () => {
     const { user } = useAuth0();
     const { name, email, sub } = user;
 
-    const submitOrder = () => {
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        let formData = {};
+        formData.name = event.target.name;
         fetch('/orders/update', {
             method: 'POST',
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
               },
-            body: JSON.stringify({})
+            body: JSON.stringify(formData)
         }).then(() => {
-            console.log("Item Saved to Database");
+            console.log("Database Item Updated");
         })
     }
 
@@ -30,31 +33,31 @@ const CheckoutPortal = () => {
             <div>
                 <form className="form">
                     <input
-                        name="First Name"
+                        name="FirstName"
                         type="text"
                         placeholder="First Name"
                     />
                     <input
-                        name="Last Name"
+                        name="LastName"
                         type="text"
                         placeholder="Last Name"
                     />
                     <input
-                        name="Contact Number"
+                        name="ContactNumber"
                         type="text"
-                        placeholder="First Name"
+                        placeholder="Contact Number"
                     />
                     <input
-                        name="Shipping Address"
+                        name="ShippingAddress"
                         type="text"
-                        placeholder="Last Name"
+                        placeholder="Shipping Address"
                     />
                     <textarea
                         name="Comments"
                         type="text"
-                        placeholder="Last Name"
+                        placeholder="Comments"
                     />
-                    <button onClick={submitOrder}>Submit</button>
+                    <button onClick={handleFormSubmit}>Submit</button>
                 </form>
             </div>
         </div>
