@@ -55,8 +55,7 @@ app.post('/orders/create', (request, response) => {
 });
 
 app.post('/orders/update', (request, response) => {
-  const orderUpdateElements = request.body;
-  console.log(orderUpdateElements);
+  console.log("Hello World!");
 })
 
 
