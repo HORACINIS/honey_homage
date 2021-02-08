@@ -30,7 +30,6 @@ const Profile = () => {
           {JSON.stringify(user, null, 2)}
         </pre>
       </div>
-      <button onClick={viewUser}>View User Details</button>
     </div>
   );
 };

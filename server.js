@@ -41,8 +41,31 @@ app.get('/orders/all', (request, response) => {
   });
 });
 
+app.post('/orders/create', (request, response) => {
+  const orderItems = request.body;
+  console.log(orderItems);
+  db.Order.create({ 
+    "user_id": request.body.user_id,
+    "items": request.body.pickedItems,
+    "total": request.body.total,
+    "status": request.body.status,
+  }, (error, data) => {
+    console.log("Hello World");
+  })
+});
+
+app.post('/orders/update', (request, response) => {
+  const orderUpdateElements = request.body;
+  console.log(orderUpdateElements);
+})
 
 
+// Display All Orders
+app.get('/orders/all', (request, response) => {
+  db.Order.find({}, (error, result) => {
+    response.json(result);
+  })
+});
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
