@@ -12,7 +12,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
-import ContactPage from "./components/ContactUs/ContactPage";
+import ContactPage from "./components/ContactPage/ContactPage";
 
 const App = () => {
 
