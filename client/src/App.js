@@ -12,6 +12,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
+import ContactPage from "./components/ContactUs/ContactPage";
 
 const App = () => {
 
@@ -52,6 +53,7 @@ const App = () => {
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
+        <ContactPage />
         <Footer />
       </div>
     </Switch>
