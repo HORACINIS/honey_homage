@@ -54,7 +54,6 @@ const App = () => {
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
           <Testimonials />
-          <Orders />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
         <Route exact path='/AdminPortal' component={AdminPortal} />
