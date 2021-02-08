@@ -24,7 +24,7 @@ const ShoppingCart = ({ pickedItems }) => {
               },
             body: JSON.stringify(pickedItems[0])
         }).then(() => {
-            console.log("Hello World");
+            console.log("Item Saved to Database");
         })
     }
 
@@ -38,7 +38,7 @@ const ShoppingCart = ({ pickedItems }) => {
                         </div>
                         <div className="checkoutInfoContainer">
                             <Link to='/CheckoutPortal'>
-                               <button className="confirmCheckoutButton">Confirm Checkout</button>
+                               <button className="confirmCheckoutButton" onClick={createOrder}>Confirm Checkout</button>
                            </Link>
                         </div>
                     </div>
@@ -48,8 +48,6 @@ const ShoppingCart = ({ pickedItems }) => {
             return;
         }
     }
-
-    createOrder();
 
     return (
         <div className="shoppingCartItemSectionMain">

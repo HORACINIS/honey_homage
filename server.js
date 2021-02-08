@@ -49,13 +49,13 @@ app.post('/orders/create', (request, response) => {
   })
 });
 
+
+// Display All Orders
 app.get('/orders/all', (request, response) => {
   db.Order.find({}, (error, result) => {
     response.json(result);
   })
 });
-
-
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

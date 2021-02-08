@@ -8,7 +8,7 @@ const AdminPortal = () => {
       method: 'GET'
     })
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(helloWorld => console.log(helloWorld));
   }
 
   return (
