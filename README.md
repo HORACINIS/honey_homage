@@ -20,7 +20,8 @@ Andrew Bui | [GitHub](https://github.com/aBuiDev) | [Portfolio](https://abuidev.
 
 ## Deployment
 
-[Github](https://github.com/HORACINIS/honey_homage)
+[Github](https://github.com/HORACINIS/honey_homage) <br>
+[Heroku Deployment](https://peaceful-reef-34834.herokuapp.com/)
 
 #
 
