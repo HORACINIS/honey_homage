@@ -263,3 +263,32 @@ Mason, 71, is a kind hearted, long time resident of the land down under. As a re
 <br>
 <br>
 <br>
+
+## Testing 
+
+### Development Desktop
+
+| Type | Task | Outcome | Comments |
+|------|------|---------|----------|
+| Authenticate | Successful signup | Pass | No prompt to confrim password. Prompt to confirm signup.|
+| Authenticate | Successful signin | Pass | |
+| Authenticate | Reject of invalid email or password | Pass | Alerts user of invalid input |
+| Authenticate | Successful log out | Pass |  |
+| User Profile | Displays user details | Pass | Minimum style.|
+| Products | Successfully renders all products from database | Pass | | 
+| Cart | Reject request to add item in cart with no quantity defined. | Pass | Alerts user to specify quatity before adding. |
+| Cart | Reject request to add item in cart with no user signed in. | Pass | Alerts user it is required to sign in before adding to cart. | 
+| Cart | Successfully adds item into cart with declared quantity. | Pass | Does not notify user that item was added. | 
+| Cart | Cart icon displays number of products added. | Pass | |
+| Cart | Returns price total for all products added. | Pass | |
+| Cart | Cart items stored in database | Fail | Stored locally. |
+| Cart | Cart icon returns number of items as null after purchase. | Fail | |
+| Cart | Cart is empty after purchase. | Fail |
+| Checkout | Successfully collects shipping address from user | Pass |  |
+| Checkout | Successfully collects contact phone number from user. | Pass | | 
+| Checkout | Retrieves data from order form to finalise transaction. | Pass | | 
+| Admin | Only renders Admin portal button for the account with Admin status. | Pass |  |
+| Admin | Successfully shows the records of orders passed with their owning user details. | Pass | | 
+
+
+
