@@ -9,15 +9,22 @@ import honeyType06 from '../../images/ProductImages/honeyType06.jpg';
 import honeyType07 from '../../images/ProductImages/honeyType07.jpg';
 import honeyType08 from '../../images/ProductImages/honeyType08.jpg';
 import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Products = ({ products, selectedProducts }) => {
 
+	const { user } = useAuth0();
 	const qtyFunc = (index) => {
 		return document.querySelectorAll('input.productListingQuanityInput')[index].value;
 	}
 
 	function addToCart(item, qty) {
-		return selectedProducts(item, qty)
+		if ( user &&  qty <= 0 ) {
+			alert('Please specify quantity.')
+		}else if( user && qty > 0 ) {
+			return selectedProducts(item, qty)
+		}else{alert("Must be signed in.")}
+		
 	}
 
 	return (
