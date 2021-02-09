@@ -9,22 +9,15 @@ import honeyType06 from '../../images/ProductImages/honeyType06.jpg';
 import honeyType07 from '../../images/ProductImages/honeyType07.jpg';
 import honeyType08 from '../../images/ProductImages/honeyType08.jpg';
 import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
-import { useAuth0 } from "@auth0/auth0-react";
 
 const Products = ({ products, selectedProducts }) => {
-
-	const { user, isAuthenticated } = useAuth0();
 
 	const qtyFunc = (index) => {
 		return document.querySelectorAll('input.productListingQuanityInput')[index].value;
 	}
 
-
 	function addToCart(item, qty) {
-		if (user && qty > 0) {
-			selectedProducts(item, qty)
-		}else if(user && qty <= 0){alert("Quantity must be specified")}
-		else{alert("Must be signed in")}
+		return selectedProducts(item, qty)
 	}
 
 	return (
@@ -54,7 +47,7 @@ const Products = ({ products, selectedProducts }) => {
 								<div className="productListingForm">
 									<label>Qty:</label>
 									<input type="number" placeholder='0' min='0' max='25' className="productListingQuanityInput" />
-									<button onClick={() => {addToCart(item, qtyFunc(i))}} className="productListingAddToCarButton">Add to Cart</button>
+									<button onClick={() => addToCart(item, qtyFunc(i))} className="productListingAddToCarButton">Add to Cart</button>
 								</div>
 							</div>
 						</div>
