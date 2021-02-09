@@ -17,7 +17,7 @@ const Products = ({ products, selectedProducts }) => {
 	}
 
 	function addToCart(item, qty) {
-		return selectedProducts(item, qty)
+		return qty <= 0 ? alert("Quantity must be specified") :  selectedProducts(item, qty)
 	}
 
 	return (
