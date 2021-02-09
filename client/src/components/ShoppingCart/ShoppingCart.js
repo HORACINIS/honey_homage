@@ -25,7 +25,10 @@ const ShoppingCart = ({ pickedItems }) => {
         initialOrderData.email = email;
         initialOrderData.name = name;
         initialOrderData.total = orderTotal;
-        initialOrderData.status = "Processing"
+        initialOrderData.status = "Processing";
+        initialOrderData.shippingAddress = " ";
+        initialOrderData.comments = " ";
+        initialOrderData.contactNumber = " ";
         fetch('/orders/create', {
             method: 'POST',
             credentials: 'include',

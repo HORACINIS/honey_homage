@@ -49,14 +49,27 @@ app.post('/orders/create', (request, response) => {
     "items": request.body.pickedItems,
     "total": request.body.total,
     "status": request.body.status,
+    "shippingAddress": request.body.shippingAddress,
+    "comments": request.body.comments,
+    "contactNumber": request.body.contactNumber
   }, (error, data) => {
     console.log("Hello World");
   })
 });
 
-app.post('/orders/update', (request, response) => {
+app.post('/orders/update/:id', (request, response) => {
+  const updateItems = request.body;
+  const updateItemsUserID = request.params.id;
+  console.log(updateItems);
+  console.log(updateItemsUserID);
   console.log("Hello World!");
-})
+  db.Order.updateMany({ user_id: updateItemsUserID }, { "shippingAddress": request.body.shippingAddress }, { multi: true }, (error, result) => {
+    if (error) {
+      console.log(error);
+    }
+    console.log("Item Updated");
+  });
+});
 
 
 // Display All Orders
