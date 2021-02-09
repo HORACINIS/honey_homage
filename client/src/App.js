@@ -56,6 +56,7 @@ const App = () => {
           <SellingPoints />
           <Products products={products} selectedProducts={selectedProducts} />
           <AboutUs />
+          <ContactPage />
           <Testimonials />
         </Route>
         <Route path='/shoppingCart' render={(props) => <ShoppingCart pickedItems={pickedItems} {...props} />} />
@@ -63,7 +64,6 @@ const App = () => {
         <Route exact path='/UserProfile' component={UserProfile} />
         <Route exact path='/CheckoutPortal' component={CheckoutPortal} />
         <Route exact path='/OrderConfirmation' component={OrderConfirmation} />
-        <ContactPage />
         <Footer />
       </div>
     </Switch>
