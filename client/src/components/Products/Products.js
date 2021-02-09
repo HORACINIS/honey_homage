@@ -59,5 +59,3 @@ const Products = ({ products, selectedProducts }) => {
 }
 
 export default Products;
-
-
