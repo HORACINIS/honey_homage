@@ -65,23 +65,27 @@ const CheckoutPortal = () => {
                                     placeholder="Shipping Address"
                                 />
                             </div>
-                            <input
-                                value={formData.contactNumber}
-                                name="contactNumber"
-                                onChange={(e) => setFormData({...formData, contactNumber: e.target.value})}
-                                type="text"
-                                placeholder="Contact Number"
-                            />
-                            <textarea
-                                value={formData.comments}
-                                name="comments"
-                                onChange={(e) => setFormData({...formData, comments: e.target.value})}
-                                type="text"
-                                placeholder="Comments"
-                            />
-                            <Link to='/OrderConfirmation'>
-                                <button className="orderConfirmationButton" onClick={handleFormSubmit}>Submit Order</button>
-                            </Link>
+                            <div className="orderConfirmationFormCommentsInputContainer">
+                                <textarea className="orderConfirmationFormCommentsInput"
+                                    value={formData.comments}
+                                    name="comments"
+                                    onChange={(e) => setFormData({...formData, comments: e.target.value})}
+                                    type="text"
+                                    placeholder="Comments"
+                                />
+                            </div>
+                            <div className="orderConfirmationFormNumberAndSubmitInputContainer">
+                                <input className="orderConfirmationFormNumberInput"
+                                    value={formData.contactNumber}
+                                    name="contactNumber"
+                                    onChange={(e) => setFormData({...formData, contactNumber: e.target.value})}
+                                    type="text"
+                                    placeholder="Contact Number"
+                                />
+                                <Link to='/OrderConfirmation'>
+                                    <button className="orderConfirmationButton" onClick={handleFormSubmit}>Submit Order</button>
+                                </Link>
+                            </div>
                         </form>
                     </div>
                 </div>
