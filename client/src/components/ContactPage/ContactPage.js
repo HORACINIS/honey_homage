@@ -1,74 +1,28 @@
 import React from 'react';
 import { ExternalLink } from 'react-external-link';
-
+import './style.css';
 
 const ContactPage = () => {
     return (
-
-        <section className="contactUsSection">
-            <div className="contactUsContainer">
-                <h2>Give us a Buzz!</h2>
-                <div className='contactInfo' id='location'>
-                    <div className='contactIcon'>
-
-                    </div>
-                    <div className="content">
-                        <h3>Office, Australia</h3>
-                        <br/>
-                        <p>Australia, NSW</p>
-                        <p>2828 The Northern Rd, Luddenham NSW 2745</p>
-                        <h4>Phone</h4>
-                        <br/>
-                        <p>(02) 4773 3279</p>
-                    </div>
+        <section className="contactUsSection" id="contactUs">
+            <div className="contactUsTitleContainer">
+                <h2>Contact Details</h2>
+            </div>
+            <div className="contactUsDetailsContainer">
+                <div className="contactUsDetailsAddressContainer">
+                    <p>1080 Goldtree Road, Honeywood NSW 2804</p>
+                    <p>info@honeyhomage.com.au</p>
+                    <p>(02) 4773 3279</p>
                 </div>
-
-                <div className='contactInfo' id="email">
-                    <div className='contactIcon'>
-
-                    </div>      
-                    <div className="content">
-                      <h3>Emails</h3>
-                      <h4>General Information:</h4>
-                      <a href="mailto:andrew.bui.au@gmail.com">El Tigre</a>
-                      <h4>Support:</h4>
-                      <a href="mailto:horacinis@gmail.com">El Guapo</a>
-                    </div>
+            </div>
+            <div className="socialMediaLinksSection">
+                <div className="socialMediaLinksContainer">
+                    <a href="#"><i className="fab fa-twitter"></i></a>
+                    <a href="#"><i className="fab fa-instagram"></i></a>
+                    <a href="#"><i className="fab fa-facebook"></i></a>
+                    <a href="#"><i className="fab fa-pinterest"></i></a>
+                    <a href="#"><i className="fab fa-youtube"></i></a>
                 </div>
-                
-
-                <div className="contactInfo" id='socialMedia'>
-                    <div className='contactIcon'>
-
-                    </div>
-                    <div className="content">
-                        <h3>Social Media</h3>
-                        <div className="linkIcon">
-                            <ExternalLink href="https://github.com/aBuiDev">
-                            <span><i className="fab fa-instagram"></i></span>
-                            </ExternalLink>
-                        </div>
-                        
-                        <div className="linkIcon">
-                            <ExternalLink href="https://github.com/HORACINIS">
-                            <span><i className="fab fa-twitter"></i></span>
-                            </ExternalLink>
-                        </div>
-
-                        <div className="linkIcon">
-                            <ExternalLink href="https://github.com/Soni-247">
-                            <span>  <i className="fab fa-pinterest"></i></span>
-                            </ExternalLink>
-                        </div>
-
-                        <div className="linkIcon">
-                            <ExternalLink href="https://github.com/HORACINIS/honey_homage">
-                            <span><i className="fab fa-facebook"></i></span>
-                            </ExternalLink>
-                        </div>
-                    </div>
-                </div>
-              
             </div>
         </section>
     );
