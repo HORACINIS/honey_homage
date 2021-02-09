@@ -9,6 +9,7 @@ import honeyType06 from '../../images/ProductImages/honeyType06.jpg';
 import honeyType07 from '../../images/ProductImages/honeyType07.jpg';
 import honeyType08 from '../../images/ProductImages/honeyType08.jpg';
 import honeyType09 from '../../images/ProductImages/honeyType09.jpg';
+import 
 
 const Products = ({ products, selectedProducts }) => {
 
@@ -17,7 +18,8 @@ const Products = ({ products, selectedProducts }) => {
 	}
 
 	function addToCart(item, qty) {
-		return selectedProducts(item, qty)
+		if (qty <= 0){<alert>Alert</alert>}else
+		{return selectedProducts(item, qty)}
 	}
 
 	return (
@@ -59,5 +61,3 @@ const Products = ({ products, selectedProducts }) => {
 }
 
 export default Products;
-
-
