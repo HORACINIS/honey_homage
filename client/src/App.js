@@ -17,6 +17,7 @@ import SellingPoints from "./components/SellingPoints/SellingPoints"
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
+import ContactPage from "./components/ContactPage/ContactPage";
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
         <Route exact path='/UserProfile' component={UserProfile} />
         <Route exact path='/CheckoutPortal' component={CheckoutPortal} />
         <Route exact path='/OrderConfirmation' component={OrderConfirmation} />
+        <ContactPage />
         <Footer />
       </div>
     </Switch>
