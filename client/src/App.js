@@ -12,10 +12,12 @@ import UserProfile from "./components/UserProfile/UserProfile.js";
 import { useAuth0 } from "@auth0/auth0-react";
 import Testimonials from "./components/Testimonials/Testimonials"
 import Orders from "./components/Orders/Orders"
+import OrderConfirmation from "./components/OrderConfirmation/OrderConfirmation"
 import SellingPoints from "./components/SellingPoints/SellingPoints"
 
 // Pages
 import AdminPortal from "../src/pages/AdminPortal/AdminPortal"
+import ContactPage from "./components/ContactPage/ContactPage";
 
 const App = () => {
 
@@ -60,6 +62,8 @@ const App = () => {
         <Route exact path='/AdminPortal' component={AdminPortal} />
         <Route exact path='/UserProfile' component={UserProfile} />
         <Route exact path='/CheckoutPortal' component={CheckoutPortal} />
+        <Route exact path='/OrderConfirmation' component={OrderConfirmation} />
+        <ContactPage />
         <Footer />
       </div>
     </Switch>
