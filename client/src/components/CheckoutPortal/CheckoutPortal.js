@@ -4,6 +4,8 @@ import "./style.css";
 
 
 const CheckoutPortal = () => {
+    const { user } = useAuth0();
+    const { name, picture, email, sub } = user;
     
     const [formData, setFormData] = useState ({
         firstName: "",
@@ -11,24 +13,12 @@ const CheckoutPortal = () => {
         shippingAddress: "",
         contactNumber: "",
         comments: ""
-      });
-
-    // handleFormSubmit = (event) => {
-    //     let value = event.target.value;
-    //     const name = event.target.name;
-
-        // this.setState({
-        //     [name]: value
-        //   });
-
-
-
-    
+      });  
 
     const handleFormSubmit = event => {
         event.preventDefault();
         console.log(formData);
-        fetch('/orders/update', {
+        fetch('/orders/update/' + sub, {
             method: 'POST',
             credentials: 'include',
             headers: {
